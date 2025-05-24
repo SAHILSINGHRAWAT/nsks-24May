@@ -40,7 +40,7 @@ const productCategories = [
     id: "support-systems",
     name: "Support Systems",
     description: "Robust supports for secure installation of cable management systems",
-    image: "/90 vertical ELBOW INSIDE.jpg",
+    image: "/images/90 vertical ELBOW INSIDE.JPG",
   },
   {
     id: "strut-channel-support-systems",
@@ -79,7 +79,7 @@ export default function ProductsPage() {
     <main className="flex flex-col min-h-screen">
       {/* Hero Section */}
       <section className="relative h-[300px] md:h-[400px]">
-        <Image src="/services/our_products.jpeg " alt="Products" fill className="object-cover" />
+        <Image src="/services/our_products.jpeg" alt="Products" fill className="object-cover" />
         <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
           <div className="text-center" style={{ color: 'white' }}>
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Products</h1>
@@ -104,17 +104,17 @@ export default function ProductsPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {productCategories.map((category) => {
               let imagePath = category.image;
-              if (category.name === "Perforated Cable Trays") imagePath = "/images/PERFORATED CABLE TRAY-01.jpg";
-              if (category.name === "Ladder Cable Trays") imagePath = "/images/F75-LADDER.jpg";
-              if (category.name === "Raceways") imagePath = "/images/PLAIN RACEWAY WITH CVE-SLEEV.jpg";
-              if (category.name === "Junction Boxes") imagePath = "/images/CEILING JUNCTION BOX.jpg";
-              if (category.name === "Cable Tray Accessories") imagePath = "/images/cable duct accessories-01--clr.jpg";
-              if (category.name === "Support Systems") imagePath = "/images/90 vertical ELBOW INSIDE.jpg";
+              if (category.name === "Perforated Cable Trays") imagePath = "/images/PERFORATED CABLE TRAY-01.JPG";
+              if (category.name === "Ladder Cable Trays") imagePath = "/images/F75-LADDER.JPG";
+              if (category.name === "Raceways") imagePath = "/images/PLAIN RACEWAY WITH CVE-SLEEV.JPG";
+              if (category.name === "Junction Boxes") imagePath = "/images/CEILING JUNCTION BOX.JPG";
+              if (category.name === "Cable Tray Accessories") imagePath = "/images/cable duct accessories-01--clr.JPG";
+              if (category.name === "Support Systems") imagePath = "/images/90 vertical ELBOW INSIDE.JPG";
               if (category.name === "Strut Channel Support Systems") imagePath = "/images/steel-factories.jpg";
-              if (category.name === "Cable Binders") imagePath = "/images/joogled floor wire duct with cvr.jpg";
-              if (category.name === "Earthing Strips") imagePath = "/images/iso-cert.jpg";
-              if (category.name === "Bottle Brackets") imagePath = "/images/dome cover.jpg";
-              if (category.name === "Solar Support Structures") imagePath = "/images/vertical elbow OUTSIDE.jpg";
+              if (category.name === "Cable Binders") imagePath = "/images/joogled floor wire duct with cvr.JPG";
+              if (category.name === "Earthing Strips") imagePath = "/images/iso-cert.JPG";
+              if (category.name === "Bottle Brackets") imagePath = "/images/dome cover.JPG";
+              if (category.name === "Solar Support Structures") imagePath = "/images/vertical elbow OUTSIDE.JPG";
               return (
                 <Card key={category.id} className="overflow-hidden group">
                   <div className="relative h-48">

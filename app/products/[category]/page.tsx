@@ -224,17 +224,17 @@ export default function ProductCategoryPage({ params }: { params: { category: st
 
   // Select main image based on category name
   let mainImage = category.images[0] || "/placeholder.svg";
-  if (category.name === "Perforated Cable Trays") mainImage = "/images/PERFORATED CABLE TRAY-01.jpg";
-  if (category.name === "Ladder Cable Trays") mainImage = "/images/F75-LADDER.jpg";
-  if (category.name === "Raceways") mainImage = "/images/PLAIN RACEWAY WITH CVE-SLEEV.jpg";
-  if (category.name === "Junction Boxes") mainImage = "/images/CEILING JUNCTION BOX.jpg";
-  if (category.name === "Cable Tray Accessories") mainImage = "/images/cable duct accessories-01--clr.jpg";
-  if (category.name === "Support Systems") mainImage = "/images/90 vertical ELBOW INSIDE.jpg";
+  if (category.name === "Perforated Cable Trays") mainImage = "/images/PERFORATED CABLE TRAY-01.JPG";
+  if (category.name === "Ladder Cable Trays") mainImage = "/images/F75-LADDER.JPG";
+  if (category.name === "Raceways") mainImage = "/images/PLAIN RACEWAY WITH CVE-SLEEV.JPG";
+  if (category.name === "Junction Boxes") mainImage = "/images/CEILING JUNCTION BOX.JPG";
+  if (category.name === "Cable Tray Accessories") mainImage = "/images/cable duct accessories-01--clr.JPG";
+  if (category.name === "Support Systems") mainImage = "/images/90 vertical ELBOW INSIDE.JPG";
   if (category.name === "Strut Channel Support Systems") mainImage = "/images/steel-factories.jpg";
-  if (category.name === "Cable Binders") mainImage = "/images/joogled floor wire duct with cvr.jpg";
-  if (category.name === "Earthing Strips") mainImage = "/images/iso-cert.jpg";
-  if (category.name === "Bottle Brackets") mainImage = "/images/dome cover.jpg";
-  if (category.name === "Solar Support Structures") mainImage = "/images/vertical elbow OUTSIDE.jpg";
+  if (category.name === "Cable Binders") mainImage = "/images/joogled floor wire duct with cvr.JPG";
+  if (category.name === "Earthing Strips") mainImage = "/images/iso-cert.JPG";
+  if (category.name === "Bottle Brackets") mainImage = "/images/dome cover.JPG";
+  if (category.name === "Solar Support Structures") mainImage = "/images/vertical elbow OUTSIDE.JPG";
 
   return (
     <main className="flex flex-col min-h-screen pt-24">
@@ -314,7 +314,7 @@ export default function ProductCategoryPage({ params }: { params: { category: st
 
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button className="flex-1">Request Quote</Button>
-                  
+
                 </div>
               </div>
             </div>
