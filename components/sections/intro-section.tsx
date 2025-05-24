@@ -1,28 +1,35 @@
+"use client"
+
 import Image from "next/image"
 import { ChevronRight } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
+import { useScrollAnimation } from "@/hooks/useScrollAnimation"
 
 export default function IntroSection() {
+  const [sectionRef, isVisible] = useScrollAnimation()
+  const [contentRef, isContentVisible] = useScrollAnimation()
+  const [imageRef, isImageVisible] = useScrollAnimation()
+
   return (
-    <section className="py-16 px-4 md:px-6 lg:px-8 bg-white animate-fade-in">
+    <section ref={sectionRef} className="py-16 px-4 md:px-6 lg:px-8 bg-white">
       <div className="container mx-auto max-w-6xl">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div>
-            <h2 className="text-3xl font-extrabold tracking-tight mb-6 text-black drop-shadow-sm">Leading Cable Tray Manufacturer in India</h2>
-            <p className="text-black mb-6">
+          <div ref={contentRef} className={`scroll-animate-left ${isContentVisible ? 'visible' : ''}`}>
+            <h2 className={`text-3xl font-extrabold tracking-tight mb-6 text-black drop-shadow-sm scroll-animate-left ${isContentVisible ? 'visible' : ''}`} style={{ transitionDelay: '0.2s' }}>Leading Cable Tray Manufacturer in India</h2>
+            <p className={`text-black mb-6 scroll-animate-left ${isContentVisible ? 'visible' : ''}`} style={{ transitionDelay: '0.4s' }}>
               NSKS Cable Trays Pvt Ltd is a premier manufacturer of high-quality cable management systems with over 20
               years of experience. Our products are designed to meet international standards and provide reliable
               solutions for electrical infrastructure across industrial, commercial, and residential applications.
             </p>
-            <p className="text-black mb-8">
+            <p className={`text-black mb-8 scroll-animate-left ${isContentVisible ? 'visible' : ''}`} style={{ transitionDelay: '0.6s' }}>
               We pride ourselves on innovation, quality control, and customer satisfaction, making us the preferred
               choice for engineers, contractors, and project managers nationwide. Our state-of-the-art manufacturing
               facility ensures precision engineering and consistent quality in every product we deliver.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-              <div className="flex items-start group bg-gray-50 rounded-lg p-4 shadow transition-transform duration-300 hover:scale-105 hover:shadow-lg">
-                <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-4 flex-shrink-0 transition-transform duration-300 group-hover:scale-110">
+              <div className={`flex items-start group bg-gray-50 rounded-lg p-4 shadow transition-transform duration-300 hover:scale-105 hover:shadow-lg scroll-animate-scale ${isContentVisible ? 'visible' : ''}`} style={{ transitionDelay: '0.8s' }}>
+                <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-4 flex-shrink-0 transition-transform duration-300 group-hover:scale-110 animate-pulse-slow">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-5 w-5 text-primary"
@@ -43,8 +50,8 @@ export default function IntroSection() {
                   <p className="text-black text-sm">ISO 9001:2015 certified manufacturing</p>
                 </div>
               </div>
-              <div className="flex items-start group bg-gray-50 rounded-lg p-4 shadow transition-transform duration-300 hover:scale-105 hover:shadow-lg">
-                <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-4 flex-shrink-0 transition-transform duration-300 group-hover:scale-110">
+              <div className={`flex items-start group bg-gray-50 rounded-lg p-4 shadow transition-transform duration-300 hover:scale-105 hover:shadow-lg scroll-animate-scale ${isContentVisible ? 'visible' : ''}`} style={{ transitionDelay: '1s' }}>
+                <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-4 flex-shrink-0 transition-transform duration-300 group-hover:scale-110 animate-pulse-slow">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-5 w-5 text-primary"
@@ -60,8 +67,8 @@ export default function IntroSection() {
                   <p className="text-black text-sm">Nationwide shipping network</p>
                 </div>
               </div>
-              <div className="flex items-start group bg-gray-50 rounded-lg p-4 shadow transition-transform duration-300 hover:scale-105 hover:shadow-lg">
-                <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-4 flex-shrink-0 transition-transform duration-300 group-hover:scale-110">
+              <div className={`flex items-start group bg-gray-50 rounded-lg p-4 shadow transition-transform duration-300 hover:scale-105 hover:shadow-lg scroll-animate-scale ${isContentVisible ? 'visible' : ''}`} style={{ transitionDelay: '1.2s' }}>
+                <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-4 flex-shrink-0 transition-transform duration-300 group-hover:scale-110 animate-pulse-slow">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-5 w-5 text-primary"
@@ -82,8 +89,8 @@ export default function IntroSection() {
                   <p className="text-black text-sm">Tailored to your specific needs</p>
                 </div>
               </div>
-              <div className="flex items-start group bg-gray-50 rounded-lg p-4 shadow transition-transform duration-300 hover:scale-105 hover:shadow-lg">
-                <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-4 flex-shrink-0 transition-transform duration-300 group-hover:scale-110">
+              <div className={`flex items-start group bg-gray-50 rounded-lg p-4 shadow transition-transform duration-300 hover:scale-105 hover:shadow-lg scroll-animate-scale ${isContentVisible ? 'visible' : ''}`} style={{ transitionDelay: '1.4s' }}>
+                <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-4 flex-shrink-0 transition-transform duration-300 group-hover:scale-110 animate-pulse-slow">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-5 w-5 text-primary"
@@ -105,13 +112,21 @@ export default function IntroSection() {
                 </div>
               </div>
             </div>
-            <Button asChild>
+            <Button asChild className={`scroll-animate-left ${isContentVisible ? 'visible' : ''}`} style={{ transitionDelay: '1.6s' }}>
               <a href="#about">
                 Learn More About Us <ChevronRight className="ml-2 h-4 w-4" />
               </a>
             </Button>
           </div>
-          <div className="relative h-[400px] md:h-[500px] rounded-xl overflow-hidden shadow-2xl border-4 border-blue-100 animate-fade-in">
+          <div ref={imageRef} className={`relative h-[400px] md:h-[500px] rounded-xl overflow-hidden shadow-2xl border-4 border-blue-100 scroll-animate-right ${isImageVisible ? 'visible' : ''}`}>
+            <Image
+              src="/images/steel-factories.jpg"
+              alt="Manufacturing facility"
+              fill
+              className="object-cover animate-float"
+              sizes="(max-width: 768px) 100vw, 50vw"
+              priority
+            />
             <Image
               src="/images/steel-factories.jpg"
               alt="Manufacturing facility"

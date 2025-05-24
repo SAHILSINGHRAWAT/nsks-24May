@@ -314,10 +314,7 @@ export default function ProductCategoryPage({ params }: { params: { category: st
 
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button className="flex-1">Request Quote</Button>
-                  <Button variant="outline" className="flex-1">
-                    <Download className="mr-2 h-4 w-4" />
-                    Download Catalog
-                  </Button>
+                  
                 </div>
               </div>
             </div>

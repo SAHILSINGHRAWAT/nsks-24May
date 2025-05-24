@@ -3,6 +3,7 @@
 import { useState } from "react"
 import Image from "next/image"
 import { ChevronLeft, ChevronRight, Quote } from "lucide-react"
+import { useScrollAnimation } from "@/hooks/useScrollAnimation"
 
 const testimonials = [
   {
@@ -36,23 +37,26 @@ const testimonials = [
 
 export default function TestimonialsSection() {
   const [current, setCurrent] = useState(0)
+  const [sectionRef, isVisible] = useScrollAnimation()
+  const [headerRef, isHeaderVisible] = useScrollAnimation()
+  const [testimonialRef, isTestimonialVisible] = useScrollAnimation()
 
   const next = () => setCurrent((prev) => (prev === testimonials.length - 1 ? 0 : prev + 1))
   const prev = () => setCurrent((prev) => (prev === 0 ? testimonials.length - 1 : prev - 1))
 
   return (
-    <section id="testimonials" className="py-20 px-4 md:px-6 lg:px-8 bg-gradient-to-br from-white via-blue-50 to-blue-100 font-sans">
+    <section ref={sectionRef} id="testimonials" className="py-20 px-4 md:px-6 lg:px-8 bg-gradient-to-br from-white via-blue-50 to-blue-100 font-sans">
       <div className="container mx-auto max-w-5xl">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-4 text-gray-900 drop-shadow-sm">
+        <div ref={headerRef} className="text-center mb-12">
+          <h2 className={`text-4xl md:text-5xl font-extrabold tracking-tight mb-4 text-gray-900 drop-shadow-sm scroll-animate-down ${isHeaderVisible ? 'visible' : ''}`}>
             What Our Clients Say
           </h2>
-          <p className="text-lg md:text-xl text-gray-700 max-w-2xl mx-auto">
+          <p className={`text-lg md:text-xl text-gray-700 max-w-2xl mx-auto scroll-animate-scale ${isHeaderVisible ? 'visible' : ''}`} style={{ transitionDelay: '0.3s' }}>
             Hear from our satisfied customers about their experience with NSKS Cable Trays
           </p>
         </div>
         <div className="flex justify-center">
-          <div className="relative w-full max-w-4xl bg-white/80 rounded-2xl shadow-2xl p-10 md:p-14 flex flex-col gap-8">
+          <div ref={testimonialRef} className={`relative w-full max-w-4xl bg-white/80 rounded-2xl shadow-2xl p-10 md:p-14 flex flex-col gap-8 scroll-animate-scale ${isTestimonialVisible ? 'visible' : ''}`} style={{ transitionDelay: '0.5s' }}>
             <Quote className="absolute left-8 top-8 text-blue-200 w-16 h-16 md:w-24 md:h-24 -z-0" />
             <p className="text-xl md:text-2xl italic font-medium text-gray-800 z-10">
               "{testimonials[current].content}"

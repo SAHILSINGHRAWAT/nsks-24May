@@ -12,7 +12,7 @@ import { MessageCircle } from "lucide-react"
 
 export default function Home() {
   return (
-    <main className="flex flex-col min-h-screen">
+    <main className="flex flex-col min-h-screen w-full max-w-full overflow-x-hidden">
       {/* Hero Section with Rotating Banner */}
       <HeroSection />
 
@@ -42,30 +42,26 @@ export default function Home() {
         href="https://wa.me/7536081635"
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed z-50 bottom-6 right-6 bg-[#25D366] rounded-full border-4 border-white shadow-xl p-3 md:p-4 flex items-center justify-center hover:bg-[#1ebe57] transition-colors"
-        style={{ boxShadow: '0 8px 32px 0 rgba(0,0,0,0.22)' }}
+        className="fixed z-50 bottom-6 right-6 bg-[#25D366] rounded-full shadow-lg p-2.5 flex items-center justify-center hover:bg-[#1ebe57] hover:scale-105 transition-all duration-300"
+        style={{ boxShadow: '0 4px 20px 0 rgba(37, 211, 102, 0.4)' }}
         aria-label="Chat on WhatsApp"
+        title="Chat with us on WhatsApp"
       >
+        {/* Professional WhatsApp Icon from Flaticon (Pixel Perfect) */}
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="32"
-          height="32"
-          fill="none"
+          width="24"
+          height="24"
           viewBox="0 0 24 24"
-          className="text-white animate-float w-8 h-8 md:w-[38px] md:h-[38px]"
+          fill="currentColor"
+          className="text-white w-6 h-6"
         >
-          <path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.472-.148-.67.15-.198.297-.767.966-.94 1.164-.173.198-.347.223-.644.075-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.151-.174.2-.298.3-.497.099-.198.05-.372-.025-.521-.075-.149-.669-1.611-.916-2.206-.242-.579-.487-.5-.669-.51-.173-.008-.372-.01-.571-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.1 3.2 5.077 4.366.71.306 1.263.489 1.695.626.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.288.173-1.413-.074-.124-.272-.198-.57-.347zm-5.421 6.13h-.001a9.87 9.87 0 0 1-4.988-1.358l-.358-.213-3.711.974.993-3.617-.233-.372A9.86 9.86 0 0 1 1.67 11.99c0-5.45 4.436-9.877 9.89-9.877 2.64 0 5.122 1.03 6.988 2.899a9.825 9.825 0 0 1 2.893 6.978c-.003 5.45-4.44 9.877-9.879 9.877zm8.413-18.29A11.815 11.815 0 0 0 11.56 0C5.19 0 0 5.187 0 11.555c0 2.04.531 4.027 1.537 5.78L.057 23.25a1.13 1.13 0 0 0 1.393 1.393l5.92-1.555a11.52 11.52 0 0 0 4.19.8h.005c6.37 0 11.56-5.187 11.56-11.555 0-3.084-1.202-5.983-3.39-8.17z"/>
+          <path d="M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .104 5.334.101 11.893c0 2.096.549 4.14 1.595 5.945L0 24l6.335-1.652c1.746.943 3.71 1.444 5.71 1.447h.006c6.585 0 11.946-5.336 11.949-11.896 0-3.176-1.24-6.165-3.495-8.4zM12.045 21.785h-.007c-1.777 0-3.506-.48-5.02-1.379l-.36-.214-3.74.98 1.005-3.645-.235-.374c-.99-1.567-1.51-3.394-1.51-5.26.003-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898 1.866 1.869 2.893 4.352 2.89 6.988-.002 5.45-4.436 9.885-9.885 9.885l-.014-.005zm5.426-7.404c-.297-.149-1.758-.867-2.03-.967-.272-.099-.47-.148-.67.15-.198.297-.767.966-.94 1.164-.173.198-.347.223-.644.075-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.151-.174.2-.298.3-.497.099-.198.05-.372-.025-.521-.075-.149-.669-1.611-.916-2.206-.242-.579-.487-.5-.669-.51-.173-.008-.372-.01-.571-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.1 3.2 5.077 4.366.71.306 1.263.489 1.695.626.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.288.173-1.413-.074-.124-.272-.198-.57-.347z"/>
         </svg>
-        <style jsx global>{`
-          @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-16px); }
-          }
-          .animate-float {
-            animation: float 2.5s ease-in-out infinite;
-          }
-        `}</style>
       </a>
+
+      {/* Attribution Comment for Flaticon */}
+      {/* WhatsApp icons created by Pixel perfect - Flaticon: https://www.flaticon.com/free-icons/whatsapp */}
     </main>
   )
 }

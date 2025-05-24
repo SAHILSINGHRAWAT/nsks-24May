@@ -1,10 +1,17 @@
+"use client"
+
 import Image from "next/image"
 import { CheckCircle, Factory, HardHat, Cog } from "lucide-react"
 import ImageErrorBoundary from "@/components/ui/image-error-boundary"
+import { useScrollAnimation } from "@/hooks/useScrollAnimation"
+import Counter from "@/components/ui/counter"
 
 export default function AboutSection() {
+  const [sectionRef, isVisible] = useScrollAnimation()
+  const [statsRef, isStatsVisible] = useScrollAnimation()
   return (
     <section
+      ref={sectionRef}
       id="about"
       className="py-20 px-4 md:px-6 lg:px-8 bg-gradient-to-br from-white via-blue-50 to-blue-200 font-modern animate-fade-in"
       style={{ fontFamily: "'Poppins', 'Inter', sans-serif" }}
@@ -81,26 +88,40 @@ export default function AboutSection() {
               />
             </div>
             <div className="absolute -bottom-6 -left-6 bg-gradient-to-r from-blue-600 to-blue-400 text-white p-6 rounded-lg shadow-lg max-w-[200px] hidden md:block animate-fade-in" style={{ animationDelay: "0.5s" }}>
-              <p className="text-3xl font-bold mb-1">20+</p>
+              <p className="text-3xl font-bold mb-1">
+                <Counter
+                  end={20}
+                  suffix="+"
+                  duration={2500}
+                  delay={500}
+                  isVisible={isVisible}
+                />
+              </p>
               <p className="text-sm">Years of Excellence in Manufacturing</p>
             </div>
           </div>
         </div>
         {/* Stats Section */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 text-center">
+        <div ref={statsRef} className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 text-center">
           {[
-            { value: "500+", label: "Projects Completed" },
-            { value: "300+", label: "Satisfied Clients" },
-            { value: "50+", label: "Product Variants" },
-            { value: "15+", label: "Industry Sectors Served" },
+            { value: 500, suffix: "+", label: "Projects Completed", delay: 0 },
+            { value: 300, suffix: "+", label: "Satisfied Clients", delay: 200 },
+            { value: 50, suffix: "+", label: "Product Variants", delay: 400 },
+            { value: 15, suffix: "+", label: "Industry Sectors Served", delay: 600 },
           ].map((stat, i) => (
             <div
-              key={stat.value}
+              key={stat.label}
               className="bg-white p-6 rounded-2xl border border-blue-500 shadow-md hover:shadow-2xl transition-transform duration-300 hover:scale-105 cursor-pointer group animate-fade-in"
               style={{ animationDelay: `${0.6 + i * 0.1}s` }}
             >
               <p className="text-4xl font-extrabold text-blue-600 mb-2 group-hover:text-black transition-colors duration-300 tracking-wider drop-shadow">
-                {stat.value}
+                <Counter
+                  end={stat.value}
+                  suffix={stat.suffix}
+                  duration={2000}
+                  delay={stat.delay}
+                  isVisible={isStatsVisible}
+                />
               </p>
               <p className="text-gray-700 group-hover:text-black transition-colors duration-300 font-medium">{stat.label}</p>
             </div>

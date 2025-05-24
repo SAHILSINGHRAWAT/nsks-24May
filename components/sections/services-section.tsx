@@ -1,7 +1,10 @@
+"use client"
+
 import Image from "next/image"
 import { CheckCircle, ArrowRight } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
+import { useScrollAnimation } from "@/hooks/useScrollAnimation"
 
 const services = [
   {
@@ -31,29 +34,35 @@ const services = [
 ]
 
 export default function ServicesSection() {
+  const [sectionRef, isVisible] = useScrollAnimation()
+  const [headerRef, isHeaderVisible] = useScrollAnimation()
+  const [servicesRef, isServicesVisible] = useScrollAnimation()
+  const [ctaRef, isCtaVisible] = useScrollAnimation()
+
   return (
-    <section id="services" className="py-16 px-4 md:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-blue-50">
+    <section ref={sectionRef} id="services" className="py-16 px-4 md:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-blue-50">
       <div className="container mx-auto max-w-6xl">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold tracking-tight mb-4 text-blue-900">Our Services</h2>
-          <p className="text-gray-700 max-w-3xl mx-auto">
+        <div ref={headerRef} className="text-center mb-12">
+          <h2 className={`text-3xl font-bold tracking-tight mb-4 text-blue-900 scroll-animate-down ${isHeaderVisible ? 'visible' : ''}`}>Our Services</h2>
+          <p className={`text-gray-700 max-w-3xl mx-auto scroll-animate-scale ${isHeaderVisible ? 'visible' : ''}`} style={{ transitionDelay: '0.3s' }}>
             We offer comprehensive support for all your cable management needs, from initial planning through
             installation and beyond.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {services.map((service) => (
+        <div ref={servicesRef} className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {services.map((service, index) => (
             <div
               key={service.id}
-              className="bg-white rounded-lg shadow-sm overflow-hidden flex flex-col h-full transition-all duration-300 hover:scale-[1.02] hover:shadow-xl group border border-blue-100"
+              className={`bg-white rounded-lg shadow-sm overflow-hidden flex flex-col h-full transition-all duration-300 hover:scale-[1.02] hover:shadow-xl group border border-blue-100 scroll-animate-scale ${isServicesVisible ? 'visible' : ''}`}
+              style={{ transitionDelay: `${0.2 + index * 0.2}s` }}
             >
               <div className="relative h-48">
-                <Image 
-                  src={service.image} 
-                  alt={service.name} 
-                  fill 
-                  className="object-cover transition-transform duration-300 group-hover:scale-105" 
+                <Image
+                  src={service.image}
+                  alt={service.name}
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
@@ -87,10 +96,10 @@ export default function ServicesSection() {
           ))}
         </div>
 
-        <div className="mt-12 bg-white p-8 rounded-lg shadow-sm border border-blue-100">
+        <div ref={ctaRef} className={`mt-12 bg-white p-8 rounded-lg shadow-sm border border-blue-100 scroll-animate-up ${isCtaVisible ? 'visible' : ''}`}>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="col-span-1 md:col-span-2">
-              <h3 className="text-2xl font-bold mb-4 text-blue-900">Need Custom Services?</h3>
+            <div className={`col-span-1 md:col-span-2 scroll-animate-left ${isCtaVisible ? 'visible' : ''}`} style={{ transitionDelay: '0.2s' }}>
+              <h3 className={`text-2xl font-bold mb-4 text-blue-900 scroll-animate-left ${isCtaVisible ? 'visible' : ''}`} style={{ transitionDelay: '0.3s' }}>Need Custom Services?</h3>
               <p className="text-gray-700 mb-6">
                 Our team of experts is ready to provide personalized solutions for your specific project requirements.
                 From initial consultation to final implementation, we ensure that your cable management system meets the
@@ -118,12 +127,12 @@ export default function ServicesSection() {
                 <a href="#contact">Request Custom Service</a>
               </Button>
             </div>
-            <div className="relative h-[200px] md:h-auto rounded-lg overflow-hidden border border-blue-100">
-              <Image 
-                src="/services/Need Custom Services.png" 
-                alt="Custom Services" 
-                fill 
-                className="object-cover" 
+            <div className={`relative h-[200px] md:h-auto rounded-lg overflow-hidden border border-blue-100 scroll-animate-right ${isCtaVisible ? 'visible' : ''}`} style={{ transitionDelay: '0.4s' }}>
+              <Image
+                src="/services/Need Custom Services.png"
+                alt="Custom Services"
+                fill
+                className="object-cover animate-float"
               />
             </div>
           </div>

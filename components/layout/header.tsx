@@ -72,7 +72,7 @@ export default function Header() {
                   className="object-contain mr-1 rounded-none w-12 h-12 md:w-[120px] md:h-20"
                   priority
                 />
-                <span className="text-2xl md:text-2xl font-bold text-gray-800 tracking-wide">Cable Trays Pvt.Ltd</span>
+                <span className="text-lg md:text-2xl font-bold text-gray-800 tracking-wide">Cable Trays Pvt.Ltd</span>
               </Link>
               <nav className="hidden md:flex items-center space-x-6">
                 <a href="/" className="text-base font-semibold text-gray-700 hover:text-blue-600 transition-colors">
@@ -112,7 +112,7 @@ export default function Header() {
               <Button asChild className="hidden md:flex bg-gradient-to-r from-blue-900 to-green-500 text-white hover:from-blue-600 hover:to-blue-800">
                 <a href="#contact">Get a Quote</a>
               </Button>
-              
+
               <Sheet open={isOpen} onOpenChange={setIsOpen}>
                 <SheetTrigger asChild>
                   <Button
@@ -124,63 +124,64 @@ export default function Header() {
                     <span className="sr-only">Toggle menu</span>
                   </Button>
                 </SheetTrigger>
-                <SheetContent side="left" className="w-[280px] sm:w-[350px]">
+                <SheetContent side="left" className="w-[280px] sm:w-[350px] bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 border-none">
                   <div className="flex flex-col h-full">
-                    <div className="flex items-center justify-between border-b pb-4">
-                      <Link href="/" className="flex items-center text-3xl font-bold text-gray-900 h-16" onClick={() => setIsOpen(false)}>
+                    <div className="flex items-center justify-between border-b border-blue-700/30 pb-2 mb-1">
+                      <Link href="/" className="flex items-center text-xl font-bold text-white h-16 hover:text-blue-300 transition-colors duration-300" onClick={() => setIsOpen(false)}>
                         <Image
                           src="/services/logo.png"
                           alt="NSKS Logo"
                           width={40}
                           height={40}
-                          className="object-contain mr-3 rounded-none w-10 h-10 md:w-[100px] md:h-16"
+                          className="object-contain mr-3 rounded-lg shadow-lg w-10 h-10 md:w-[100px] md:h-16"
                           priority
                         />
-                        <span>NSKS Cable Trays</span>
+                        <span className="bg-gradient-to-r from-blue-300 to-green-300 bg-clip-text text-transparent">NSKS Cable Trays</span>
                       </Link>
-                      <Button variant="ghost" size="icon" onClick={() => setIsOpen(false)}>
+                      <Button variant="ghost" size="icon" onClick={() => setIsOpen(false)} className="text-white hover:text-red-400 hover:bg-red-500/20 transition-all duration-300 rounded-full">
                         <X className="h-5 w-5" />
                         <span className="sr-only">Close menu</span>
                       </Button>
                     </div>
-                    <nav className="flex flex-col space-y-5 mt-6">
-                      <a href="/" className="text-lg font-semibold text-gray-700" onClick={() => setIsOpen(false)}>
-                        Home
+                    <nav className="flex flex-col space-y-1 mt-4">
+                      <a href="/" className="text-base font-semibold text-white hover:text-blue-300 hover:bg-blue-800/30 px-3 py-2 rounded-lg transition-all duration-300 transform hover:translate-x-2 hover:shadow-lg border-l-4 border-transparent hover:border-blue-400" onClick={() => setIsOpen(false)}>
+                        🏠 Home
                       </a>
-                      <Link href="/about" className="text-lg font-semibold text-gray-700" onClick={() => setIsOpen(false)}>
-                        About Us
+                      <Link href="/about" className="text-base font-semibold text-white hover:text-blue-300 hover:bg-blue-800/30 px-3 py-2 rounded-lg transition-all duration-300 transform hover:translate-x-2 hover:shadow-lg border-l-4 border-transparent hover:border-blue-400" onClick={() => setIsOpen(false)}>
+                        ℹ️ About Us
                       </Link>
-                      <div className="space-y-2">
-                        <a href="/products" className="text-lg font-semibold text-gray-700" onClick={() => setIsOpen(false)}>
-                          Products
+                      <div className="space-y-1">
+                        <a href="/products" className="text-base font-semibold text-white hover:text-blue-300 hover:bg-blue-800/30 px-3 py-2 rounded-lg transition-all duration-300 transform hover:translate-x-2 hover:shadow-lg border-l-4 border-transparent hover:border-blue-400 block" onClick={() => setIsOpen(false)}>
+                          📦 Products
                         </a>
-                        <div className="pl-4 space-y-2 border-l border-gray-200">
-                          {productCategories.map((category) => (
+                        <div className="pl-4 space-y-1 border-l-2 border-blue-600/40 ml-3">
+                          {productCategories.map((category, index) => (
                             <a
                               key={category.href}
                               href={category.href}
-                              className="block text-sm font-medium text-gray-600 hover:text-blue-600"
+                              className="block text-xs font-medium text-blue-200 hover:text-white hover:bg-blue-700/40 px-2 py-1 rounded-md transition-all duration-300 transform hover:translate-x-1 hover:shadow-md"
                               onClick={() => setIsOpen(false)}
+                              style={{ animationDelay: `${index * 50}ms` }}
                             >
-                              {category.name}
+                              • {category.name}
                             </a>
                           ))}
                         </div>
                       </div>
-                      <Link href="/services" className="text-lg font-semibold text-gray-700" onClick={() => setIsOpen(false)}>
-                        Services
+                      <Link href="/services" className="text-base font-semibold text-white hover:text-blue-300 hover:bg-blue-800/30 px-3 py-2 rounded-lg transition-all duration-300 transform hover:translate-x-2 hover:shadow-lg border-l-4 border-transparent hover:border-blue-400" onClick={() => setIsOpen(false)}>
+                        🔧 Services
                       </Link>
-                      <Link href="/certifications" className="text-lg font-semibold text-gray-700" onClick={() => setIsOpen(false)}>
-                        Certifications
+                      <Link href="/certifications" className="text-base font-semibold text-white hover:text-blue-300 hover:bg-blue-800/30 px-3 py-2 rounded-lg transition-all duration-300 transform hover:translate-x-2 hover:shadow-lg border-l-4 border-transparent hover:border-blue-400" onClick={() => setIsOpen(false)}>
+                        🏆 Certifications
                       </Link>
-                      <Link href="/contact" className="text-lg font-semibold text-gray-700" onClick={() => setIsOpen(false)}>
-                        Contact
+                      <Link href="/contact" className="text-base font-semibold text-white hover:text-blue-300 hover:bg-blue-800/30 px-3 py-2 rounded-lg transition-all duration-300 transform hover:translate-x-2 hover:shadow-lg border-l-4 border-transparent hover:border-blue-400" onClick={() => setIsOpen(false)}>
+                        📞 Contact
                       </Link>
                     </nav>
-                    <div className="mt-auto pt-6 border-t">
-                      <Button asChild className="w-full bg-gradient-to-r from-blue-500 to-blue-700 text-white hover:from-blue-600 hover:to-blue-800">
-                        <a href="/#contact" onClick={() => setIsOpen(false)}>
-                          Get a Quote
+                    <div className="mt-auto pt-3 border-t border-blue-700/30">
+                      <Button asChild className="w-full bg-gradient-to-r from-green-500 to-blue-600 text-white hover:from-green-600 hover:to-blue-700 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 font-semibold py-3 rounded-xl">
+                        <a href="/#contact" onClick={() => setIsOpen(false)} className="flex items-center justify-center gap-2">
+                          💬 Get a Quote
                         </a>
                       </Button>
                     </div>

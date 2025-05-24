@@ -50,11 +50,11 @@ export default function HeroSection() {
   }, [])
 
   return (
-    <section id="home" className="relative h-screen min-h-[600px] max-h-[800px] pt-[64px]">
+    <section id="home" className="relative h-screen min-h-[600px] max-h-[800px] pt-[120px] md:pt-[140px]">
       {slides.map((slide, index) => (
         <div
           key={slide.id}
-          className={`absolute inset-0 transition-opacity duration-1000 ${
+          className={`absolute inset-0 bg-gray-100 transition-opacity duration-1000 ${
             index === currentSlide ? "opacity-100" : "opacity-0 pointer-events-none"
           }`}
         >
@@ -62,28 +62,25 @@ export default function HeroSection() {
             src={slide.image}
             alt={slide.title}
             fill
-            className="object-cover"
+            className="object-contain"
             priority={index === 0}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
           />
-          <div className="absolute inset-0 bg-black/50" />
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="container mx-auto max-w-6xl px-4 md:px-6 lg:px-8">
-              <div className="max-w-xl text-white">
-                <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4">{slide.title}</h1>
-                <p className="text-lg md:text-xl mb-8">{slide.description}</p>
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Button size="lg" asChild>
-                    <a href={slide.link}>Explore Products</a>
-                  </Button>
-                  <Button
-                    size="lg"
-                    variant="outline"
-                    className="bg-transparent text-white border-white hover:bg-white/20"
-                  >
-                    <a href="#contact">Request Quote</a>
-                  </Button>
-                </div>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-black/20" />
+          <div className="absolute inset-0 flex items-end justify-end pb-12 md:pb-20 pr-4 md:pr-8">
+            <div className="text-right text-black max-w-sm md:max-w-2xl">
+              <h1 className="text-xl md:text-4xl lg:text-5xl font-bold mb-2 md:mb-4 leading-tight">{slide.title}</h1>
+              <p className="text-xs md:text-lg mb-3 md:mb-6 leading-relaxed opacity-90">{slide.description}</p>
+              <div className="flex flex-col md:flex-row gap-2 md:gap-3 items-end md:items-center">
+                <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white border-0 px-4 md:px-6 py-1.5 md:py-2.5 text-xs md:text-base font-medium h-8 md:h-10">
+                  <a href={slide.link}>Explore Products</a>
+                </Button>
+                <Button
+                  variant="outline"
+                  className="bg-transparent text-white border border-white md:border-2 hover:bg-white hover:text-gray-900 px-4 md:px-6 py-1.5 md:py-2.5 text-xs md:text-base font-medium transition-all duration-300 h-8 md:h-10"
+                >
+                  <a href="#contact">Request Quote</a>
+                </Button>
               </div>
             </div>
           </div>
@@ -93,26 +90,30 @@ export default function HeroSection() {
       {/* Navigation Arrows */}
       <button
         onClick={prevSlide}
-        className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-2 rounded-full transition-colors z-10"
+        className="absolute left-4 md:left-6 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white p-3 rounded-full transition-all duration-300 z-10 opacity-70 hover:opacity-100"
         aria-label="Previous slide"
       >
-        <ChevronLeft className="h-6 w-6" />
+        <ChevronLeft className="h-5 w-5" />
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-2 rounded-full transition-colors z-10"
+        className="absolute right-4 md:right-6 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white p-3 rounded-full transition-all duration-300 z-10 opacity-70 hover:opacity-100"
         aria-label="Next slide"
       >
-        <ChevronRight className="h-6 w-6" />
+        <ChevronRight className="h-5 w-5" />
       </button>
 
       {/* Indicators */}
-      <div className="absolute bottom-6 left-0 right-0 flex justify-center space-x-2 z-10">
+      <div className="absolute bottom-8 left-0 right-0 flex justify-center space-x-3 z-10">
         {slides.map((_, index) => (
           <button
             key={index}
             onClick={() => setCurrentSlide(index)}
-            className={`w-3 h-3 rounded-full transition-colors ${index === currentSlide ? "bg-white" : "bg-white/50"}`}
+            className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
+              index === currentSlide
+                ? "bg-white scale-125"
+                : "bg-white/40 hover:bg-white/60"
+            }`}
             aria-label={`Go to slide ${index + 1}`}
           />
         ))}

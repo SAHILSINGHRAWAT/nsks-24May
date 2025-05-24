@@ -5,9 +5,9 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { Menu, X, ChevronDown, Phone, Mail } from "lucide-react"
 
-import { Button } from "@/components/ui/button"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
+import { Button } from "./ui/button"
+import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet"
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "./ui/dropdown-menu"
 
 const productCategories = [
   { name: "Perforated Cable Trays", href: "/products/perforated-cable-trays" },
@@ -61,8 +61,11 @@ export default function Header() {
         <div className="container mx-auto max-w-6xl px-4 md:px-6 lg:px-8">
           <div className="flex h-16 items-center justify-between">
             <div className="flex items-center">
-              <Link href="/" className="text-xl font-bold text-primary mr-8">
-                Cable Trays
+              <Link
+                href="/"
+                className="font-bold text-primary mr-2 text-lg sm:text-xl md:text-2xl whitespace-nowrap"
+              >
+                Cable Trays Pvt.Ltd
               </Link>
               <nav className="hidden md:flex items-center space-x-6">
                 <Link
