@@ -48,10 +48,15 @@ const productCategories = {
       { name: "Compliance", value: "NEMA VE 1, IEC 61537, BS EN 61537" },
     ],
     images: [
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
+      "/images/PERFORATED CABLE TRAY-01.JPG",
+      "/images/PERFORATED CABLE TRAY-02.JPG",
+      "/images/PERFORATED CABLE TRAY-03.JPG",
+      "/images/PERFORATED CABLE TRAY-04.JPG",
+      "/images/PERFORATED CABLE TRAY-05.JPG",
+      "/images/PERFORATED CABLE TRAY-06.JPG",
+      "/images/PERFORATED CABLE TRAY-07.JPG",
+      "/images/PERFORATED CABLE TRAY-08.JPG",
+      "/images/PERFORATED CABLE TRAY-09.JPG"
     ],
   },
   "ladder-cable-trays": {
@@ -94,10 +99,11 @@ const productCategories = {
       { name: "Compliance", value: "NEMA VE 1, IEC 61537, BS EN 61537" },
     ],
     images: [
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
+      "/images/F75-LADDER.JPG",
+      "/images/F100- LADDER.JPG",
+      "/images/F100-WELD LADDER.JPG",
+      "/images/F50- WELD LADDER.JPG",
+      "/images/F75- WELD LADDER.JPG"
     ],
   },
   "junction-boxes": {
@@ -135,7 +141,9 @@ const productCategories = {
       { name: "Compliance", value: "IEC 60670, IS 5133" },
     ],
     images: [
-      "/images/CEILING JUNCTION BOX.JPG"
+      "/images/CEILING JUNCTION BOX.JPG",
+      "/images/floor jnctn box.JPG",
+      "/images/dome cover.JPG"
     ],
   },
   "cable-tray-accessories": {
@@ -172,7 +180,10 @@ const productCategories = {
       { name: "Compliance", value: "NEMA VE 1, IEC 61537" },
     ],
     images: [
-      "/images/cable duct accessories-01--clr.JPG"
+      "/images/cable duct accessories-01--clr.JPG",
+      "/images/COUPLING TRAYS.JPG",
+      "/images/F25-V- COUPLING TRAY.JPG",
+      "/images/F75-V- COUPLING TRAYS.JPG"
     ],
   },
   "support-systems": {
@@ -209,7 +220,56 @@ const productCategories = {
       { name: "Compliance", value: "NEMA VE 1, IEC 61537" },
     ],
     images: [
-      "/placeholder.svg"
+      "/images/90 vertical ELBOW INSIDE.JPG",
+      "/images/VERTICAL ELBOW INSIDE.JPG",
+      "/images/VERTICAL ELBOW OUTSIDE (2).JPG",
+      "/images/vertical elbow OUTSIDE.JPG"
+    ],
+  },
+  "raceways": {
+    name: "Raceways",
+    description: "Enclosed pathways for protecting and organizing cables in various environments, providing complete protection from external elements.",
+    longDescription: "Raceways provide complete enclosure for cables, protecting them from dust, moisture, and mechanical damage. Available in various configurations including plain, flanged, and joggled designs.",
+    features: [
+      "Complete cable protection",
+      "Dust and moisture resistant",
+      "Multiple configuration options",
+      "Easy installation and maintenance",
+      "Smooth interior for easy cable pulling",
+      "Stackable design for space efficiency",
+    ],
+    benefits: [
+      "Maximum cable protection",
+      "Improved system reliability",
+      "Clean and organized appearance",
+      "Reduced maintenance requirements",
+      "Flexible installation options",
+    ],
+    applications: [
+      "Clean room environments",
+      "Food processing facilities",
+      "Pharmaceutical plants",
+      "Outdoor installations",
+      "Corrosive environments",
+    ],
+    specifications: [
+      { name: "Material", value: "Galvanized steel, Stainless steel, PVC" },
+      { name: "Widths", value: "50mm to 300mm" },
+      { name: "Heights", value: "25mm to 100mm" },
+      { name: "Lengths", value: "2m, 3m (custom lengths available)" },
+      { name: "Cover Options", value: "Hinged, removable, fixed" },
+      { name: "Ingress Protection", value: "Up to IP65" },
+      { name: "Finish Options", value: "Galvanized, Powder coated, Stainless steel" },
+      { name: "Compliance", value: "IEC 61537, IS 2309" },
+    ],
+    images: [
+      "/images/PLAIN RACEWAY WITH CVE-SLEEV.JPG",
+      "/images/INWARD FLANGED WIRE DUCT WITH COVER.JPG",
+      "/images/JOGGLED RACEWAY WITH CVR.JPG",
+      "/images/INWARD FLANGE RACEWAY-SLEEVE.JPG",
+      "/images/INWARD FLANGE RACEWAY-SLEEVE-CVR.JPG",
+      "/images/joogled floor wire duct with cvr.JPG",
+      "/images/FLANGE RACEWAY.JPG"
     ],
   },
   // Additional product categories would be defined here
