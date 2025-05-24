@@ -17,7 +17,7 @@ import {
 const productCategories = [
   { name: "Perforated Cable Trays", href: "/products/perforated-cable-trays" },
   { name: "Ladder Cable Trays", href: "/products/ladder-cable-trays" },
-  { name: "Raceways", href: "/products/Raceways" },
+  { name: "Raceways", href: "/products/raceways" },
   { name: "Junction Boxes", href: "/products/junction-boxes" },
   { name: "Cable Tray Accessories", href: "/products/cable-tray-accessories" },
   { name: "Support Systems", href: "/products/support-systems" },

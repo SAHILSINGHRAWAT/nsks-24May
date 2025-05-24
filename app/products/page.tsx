@@ -76,7 +76,7 @@ const productCategories = [
 
 export default function ProductsPage() {
   return (
-    <main className="flex flex-col min-h-screen">
+    <main className="flex flex-col min-h-screen pt-28 md:pt-0">
       {/* Hero Section */}
       <section className="relative h-[300px] md:h-[400px]">
         <Image src="/services/our_products.jpeg" alt="Products" fill className="object-cover" />
