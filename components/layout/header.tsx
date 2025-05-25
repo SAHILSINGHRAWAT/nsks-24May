@@ -169,7 +169,7 @@ export default function Header() {
                         </div>
                       </div>
                       <Link href="/services" className="text-base font-semibold text-white hover:text-blue-300 hover:bg-blue-800/30 px-3 py-2 rounded-lg transition-all duration-300 transform hover:translate-x-2 hover:shadow-lg border-l-4 border-transparent hover:border-blue-400" onClick={() => setIsOpen(false)}>
-                        🔧 Services
+                        🔧 Clients
                       </Link>
                       <Link href="/certifications" className="text-base font-semibold text-white hover:text-blue-300 hover:bg-blue-800/30 px-3 py-2 rounded-lg transition-all duration-300 transform hover:translate-x-2 hover:shadow-lg border-l-4 border-transparent hover:border-blue-400" onClick={() => setIsOpen(false)}>
                         🏆 Certifications
