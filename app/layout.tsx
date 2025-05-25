@@ -4,7 +4,6 @@ import { Inter } from "next/font/google"
 import "./globals.css"
 import Header from "@/components/layout/header"
 import Footer from "@/components/layout/footer"
-import { ThemeProvider } from "@/components/theme-provider"
 import ClientLoaderWrapper from "@/components/ClientLoaderWrapper"
 
 const inter = Inter({ subsets: ["latin"] })
@@ -24,13 +23,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} w-full max-w-full overflow-x-hidden`}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <ClientLoaderWrapper>
-            <Header />
-            {children}
-            <Footer />
-          </ClientLoaderWrapper>
-        </ThemeProvider>
+        <ClientLoaderWrapper>
+          <Header />
+          {children}
+          <Footer />
+        </ClientLoaderWrapper>
       </body>
     </html>
   )

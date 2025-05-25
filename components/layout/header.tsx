@@ -6,7 +6,7 @@ import { Menu, X, ChevronDown, Phone, Mail, Facebook, Twitter, Linkedin, Instagr
 import Image from "next/image"
 
 import { Button } from "@/components/ui/button"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet"
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -125,6 +125,7 @@ export default function Header() {
                   </Button>
                 </SheetTrigger>
                 <SheetContent side="left" className="w-[280px] sm:w-[350px] bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 border-none">
+                  <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
                   <div className="flex flex-col h-full">
                     <div className="flex items-center justify-between border-b border-blue-700/30 pb-2 mb-1">
                       <Link href="/" className="flex items-center text-xl font-bold text-white h-16 hover:text-blue-300 transition-colors duration-300" onClick={() => setIsOpen(false)}>
@@ -169,7 +170,7 @@ export default function Header() {
                         </div>
                       </div>
                       <Link href="/services" className="text-base font-semibold text-white hover:text-blue-300 hover:bg-blue-800/30 px-3 py-2 rounded-lg transition-all duration-300 transform hover:translate-x-2 hover:shadow-lg border-l-4 border-transparent hover:border-blue-400" onClick={() => setIsOpen(false)}>
-                        🔧 Clients
+                      💻 Clients
                       </Link>
                       <Link href="/certifications" className="text-base font-semibold text-white hover:text-blue-300 hover:bg-blue-800/30 px-3 py-2 rounded-lg transition-all duration-300 transform hover:translate-x-2 hover:shadow-lg border-l-4 border-transparent hover:border-blue-400" onClick={() => setIsOpen(false)}>
                         🏆 Certifications
