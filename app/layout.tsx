@@ -5,6 +5,7 @@ import "./globals.css"
 import Header from "@/components/layout/header"
 import Footer from "@/components/layout/footer"
 import ClientLoaderWrapper from "@/components/ClientLoaderWrapper"
+import { Toaster } from "@/components/ui/toaster"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -28,6 +29,7 @@ export default function RootLayout({
           {children}
           <Footer />
         </ClientLoaderWrapper>
+        <Toaster />
       </body>
     </html>
   )
