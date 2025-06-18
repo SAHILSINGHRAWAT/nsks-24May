@@ -34,11 +34,11 @@ export default function Header() {
           <div className="w-full sm:w-auto flex flex-col sm:flex-row items-center justify-center sm:justify-start gap-2 sm:gap-6 mb-2 sm:mb-0">
             <div className="flex items-center gap-2">
               <Phone className="h-4 w-4" />
-              <span>+91 1234 567 890</span>
+              <span>+91 9515047239</span>
             </div>
             <div className="flex items-center gap-2">
               <Mail className="h-4 w-4" />
-              <span>info@nskscabletrays.com</span>
+              <span>info@nskscabletrays.com </span>
             </div>
           </div>
           <div className="w-full sm:w-auto flex justify-center sm:justify-end items-center gap-6 text-white">
@@ -46,10 +46,10 @@ export default function Header() {
             <a href="#" className="hover:underline">News</a>
             <a href="#" className="hover:underline">Support</a>
             <div className="hidden sm:flex items-center gap-4 ml-6">
-              <a href="#" className="text-gray-300 hover:text-white transition-colors" aria-label="Facebook"><Facebook className="h-5 w-5" /></a>
+              {/* <a href="#" className="text-gray-300 hover:text-white transition-colors" aria-label="Facebook"><Facebook className="h-5 w-5" /></a>
               <a href="#" className="text-gray-300 hover:text-white transition-colors" aria-label="Twitter"><Twitter className="h-5 w-5" /></a>
               <a href="#" className="text-gray-300 hover:text-white transition-colors" aria-label="LinkedIn"><Linkedin className="h-5 w-5" /></a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors" aria-label="Instagram"><Instagram className="h-5 w-5" /></a>
+              <a href="#" className="text-gray-300 hover:text-white transition-colors" aria-label="Instagram"><Instagram className="h-5 w-5" /></a> */}
             </div>
             <Button asChild className=" ml-6 hidden md:flex bg-gradient-to-r from-blue-900 to-green-800 text-white hover:from-green-600 hover:to-green-800">
               <a href="/brochure.pdf" download>Download Brochure</a>

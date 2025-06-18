@@ -127,7 +127,7 @@ export default function Footer() {
               <Phone className="h-5 w-5 mr-3 text-primary" />
               <div>
                 <h4 className="text-white font-medium">Phone</h4>
-                <p>+91 1234 567 890</p>
+                <p>+91 9515047239</p>
               </div>
             </div>
             <div className="flex items-start">
@@ -141,7 +141,8 @@ export default function Footer() {
               <MapPin className="h-5 w-5 mr-3 text-primary" />
               <div>
                 <h4 className="text-white font-medium">Address</h4>
-                <p>123 Industrial Area, Mumbai, India</p>
+                <p>Plot No:1, Road No:3, Satellite Industrial State (SIE)
+Shivalayam Road, Balanagar, Hyderabad- 500037</p>
               </div>
             </div>
           </div>

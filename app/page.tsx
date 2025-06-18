@@ -39,7 +39,7 @@ export default function Home() {
 
       {/* Floating WhatsApp Icon */}
       <a
-        href="https://wa.me/7536081635"
+        href="https://wa.me/9515047239"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed z-50 bottom-6 right-6 bg-[#25D366] rounded-full shadow-lg p-2.5 flex items-center justify-center hover:bg-[#1ebe57] hover:scale-105 transition-all duration-300"

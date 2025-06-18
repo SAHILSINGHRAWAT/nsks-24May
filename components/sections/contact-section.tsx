@@ -86,8 +86,8 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <h4 className="font-semibold mb-1 text-black">Phone</h4>
-                    <p className="text-gray-600">+91 1234 567 890</p>
-                    <p className="text-gray-600">+91 9876 543 210</p>
+                    <p className="text-gray-600">+91 9515047239</p>
+                    <p className="text-gray-600">+91 9515077063</p>
                   </div>
                 </div>
                 <div className="flex items-start">
@@ -97,7 +97,7 @@ export default function ContactSection() {
                   <div>
                     <h4 className="font-semibold mb-1 text-black">Email</h4>
                     <p className="text-gray-600">info@nskscabletrays.com</p>
-                    <p className="text-gray-600">sales@nskscabletrays.com</p>
+                    <p className="text-gray-600">enquiry@nskscabletrays.com </p>
                   </div>
                 </div>
                 <div className="flex items-start">
@@ -107,11 +107,11 @@ export default function ContactSection() {
                   <div>
                     <h4 className="font-semibold mb-1 text-black">Address</h4>
                     <p className="text-gray-600">
-                      NSKS Cable Trays Pvt Ltd,
+                      Plot No:1, Road No:3 ,
                       <br />
-                      123 Industrial Area, Phase II,
+                     Satellite Industrial State (SIE)
                       <br />
-                      Mumbai, Maharashtra 400001, India
+                      Shivalayam Road, Balanagar, Hyderabad- 500037 , India.  
                     </p>
                   </div>
                 </div>
