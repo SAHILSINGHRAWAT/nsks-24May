@@ -11,21 +11,35 @@ const slides = [
     id: 1,
     title: "Perforated Cable Trays",
     description: "Superior ventilation and heat dissipation for optimal cable performance",
-    image: "/images/PERFORATED CABLE TRAY-01.JPG",
+    image: "/real-world-images/Application-of-Cable-Tray-0.jpg",
     link: "/products",
   },
   {
     id: 2,
     title: "Ladder Cable Trays",
     description: "Heavy-duty support for large cables in industrial environments",
-    image: "/images/F100- LADDER.JPG",
+    image: "/real-world-images/Cable-Tray-Installation.jpg",
     link: "/products",
   },
   {
     id: 3,
     title: "Raceways",
     description: "Enclosed pathways for protecting cables in various applications",
-    image: "/images/INWARD FLANGED WIRE DUCT WITH COVER.JPG",
+    image: "/real-world-images/raceways.jpg",
+    link: "/products",
+  },
+  {
+    id: 4,
+    title: "Cable Binders",
+    description: "Goodbye to tangled wires and messy desks—our cable binders keep all your cords neatly secured",
+    image: "/real-world-images/cable-trays2.jpg",
+    link: "/products",
+  },
+  {
+    id: 5,
+    title: "Cable Trays",
+    description: "Goodbye to tangled wires and messy desks—our cable binders keep all your cords neatly secured",
+    image: "/real-world-images/cableT.png",
     link: "/products",
   },
 ]
@@ -68,7 +82,7 @@ export default function HeroSection() {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-black/20" />
           <div className="absolute inset-0 flex items-end justify-end pb-12 md:pb-20 pr-4 md:pr-8">
-            <div className="text-right text-black max-w-sm md:max-w-2xl">
+            <div className="text-right text-white drop-shadow-[0_2px_6px_rgba(0,0,0,0.8)] max-w-sm md:max-w-2xl">
               <h1 className="text-xl md:text-4xl lg:text-5xl font-bold mb-2 md:mb-4 leading-tight">{slide.title}</h1>
               <p className="text-xs md:text-lg mb-3 md:mb-6 leading-relaxed opacity-90">{slide.description}</p>
               <div className="flex flex-col md:flex-row gap-2 md:gap-3 items-end md:items-center">

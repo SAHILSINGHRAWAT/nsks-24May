@@ -21,6 +21,11 @@ const productCategories = [
   { name: "Junction Boxes", href: "/products/junction-boxes" },
   { name: "Cable Tray Accessories", href: "/products/cable-tray-accessories" },
   { name: "Support Systems", href: "/products/support-systems" },
+  { name: "Strut Channel Support System", href: "/products/strut-channel-support-system" },
+  { name: "Cable Binders", href: "/products/cable-binders" },
+  { name: "Earthing Strips", href: "/products/earthing-strips" },
+  { name: "Bottle Bracket", href: "/products/bottle-bracket" },
+  { name: "Solar Support Structure", href: "/products/solar-support-structure" },
 ]
 
 export default function Header() {
