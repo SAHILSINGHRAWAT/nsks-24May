@@ -1,7 +1,10 @@
+'use client'
+
 import Image from "next/image"
 import Link from "next/link"
 import { notFound } from "next/navigation"
 import { ArrowLeft, Download, CheckCircle } from "lucide-react"
+import React from "react"
 
 import { Button } from "@/components/ui/button"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
@@ -13,14 +16,14 @@ const productCategories = {
     description:
       "Our perforated cable trays provide excellent ventilation and heat dissipation for your cables, ensuring optimal performance and longevity.",
     longDescription:
-      "Perforated Cable Trays are designed with ventilation holes that provide excellent airflow around cables, preventing heat buildup and extending cable life. The perforations also reduce the overall weight of the tray, making installation easier while maintaining structural integrity. These trays are ideal for applications where heat dissipation is critical, such as data centers, telecommunications facilities, and industrial environments with high-power cables.",
+      "A Perforated cable tray is a prominent category of cable tray that comes with holes in the bottom sheet and side rails, used for laying power and signal cables. Perforated cable trays have a strong structure that allows them to carry multiple cables of different types. These come with smooth edges that protect the wires from getting scratched. The cable trays are strong enough to withstand short circuits.The perforated cable trays are used to distribute electricity in departmental stores, airports, hospitals, and gyms. Perforated cable trays are flexible and easy to install. Overall, the maintenance is also low.",
     features: [
-      "Superior ventilation and heat dissipation",
-      "Reduced weight for easier installation",
-      "High load-bearing capacity",
-      "Corrosion-resistant finishes available",
-      "Compatible with various mounting accessories",
-      "Available in multiple widths and depths",
+      "Comes up with seamless designs.",
+      "The trays are durable and reliable. ",
+      "Comes in loaded specifications",
+      "Ideal for handling high pressure",
+      "Stackable design for space efficiency",
+      "Easy to Maintain",
     ],
     benefits: [
       "Extends cable lifespan by preventing overheating",
@@ -48,30 +51,30 @@ const productCategories = {
       { name: "Compliance", value: "NEMA VE 1, IEC 61537, BS EN 61537" },
     ],
     images: [
-      "/images/PERFORATED CABLE TRAY-01.JPG",
-      "/images/PERFORATED CABLE TRAY-02.JPG",
-      "/images/PERFORATED CABLE TRAY-03.JPG",
-      "/images/PERFORATED CABLE TRAY-04.JPG",
-      "/images/PERFORATED CABLE TRAY-05.JPG",
-      "/images/PERFORATED CABLE TRAY-06.JPG",
-      "/images/PERFORATED CABLE TRAY-07.JPG",
-      "/images/PERFORATED CABLE TRAY-08.JPG",
-      "/images/PERFORATED CABLE TRAY-09.JPG"
+      "/new_Images/90 DEGREE HORIZONTAL BEND ..JPG",
+      "/new_Images/90 DEGREE HORIZONTAL BEND ._1.JPG",
+      "/new_Images/90 DEGREE HORIZONTAL BEND ._2.JPG",
+      "/new_Images/90 DEGREE HORIZONTAL BEND..JPG",
+      "/new_Images/90 DEGREE HORIZONTAL BEND._1.JPG",
+      "/new_Images/90 DEGREE INTERNAL BEND BOLTED RUNG LADDER.JPG",
+      "/new_Images/90 DEGREE VERTICAL EXTERNAL BEND ..JPG",
+      "/new_Images/90 DEGREE VERTICAL EXTERNAL BEND ._1.JPG",
+      "/new_Images/EQUAL TEE..JPG",
+      "/new_Images/CENTERAL REDUCER ..JPG",
+      "/new_Images/CENTERAL REDUCER ._1.JPG",
+      "/new_Images/CROSS..JPG",
     ],
   },
   "ladder-cable-trays": {
     name: "Ladder Cable Trays",
-    description:
-      "Our ladder cable trays are designed for heavy-duty applications, offering maximum strength and support for large and heavy cables.",
-    longDescription:
-      "Ladder Cable Trays feature a design with side rails connected by rungs, creating an open structure that provides excellent support for large and heavy cables. This design allows for maximum air circulation and heat dissipation, while also making cable installation and management easier. The spacing between rungs can be customized to suit specific requirements, providing flexibility for different cable types and loads.",
+    description:"Our Ladder cable trays are made up of high-quality materials, hence it is bound to have a very long working life.  Our ladder cable trays are made with high-grade MS & GI coating that works very well with high resistance.",
+    longDescription:"Ladder cable trays are a typical kind of cable tray that gets constructed by joining two longitude channels with supporting horizontal rungs. The usual materials used for making Ladder cable trays are aluminum, FRP, or stainless steel that comes along with hot-dipped galvanized, epoxy, pre-galvanized, polyester, or powder coated surfaces. Due to the strong structure, the ladder cable trays provide complete protection from the high pressures. The primary use of the Ladder cable trays is in power plants or paper mills for laying power cables or control cables. ",
     features: [
-      "High load-bearing capacity for heavy cables",
-      "Open design for maximum ventilation",
-      "Customizable rung spacing",
-      "Robust construction for industrial environments",
-      "Available in various widths and depths",
-      "Multiple finish options for different environments",
+      "High loading capabilities",
+      "Longer life of service",
+      "Air ventilation properties as the ladder is very spacious",
+      "Suitable for multiple locations except elevator shafts",
+      "Strong and robust structure that allows laying cables of different sizes",
     ],
     benefits: [
       "Ideal for supporting large and heavy cables",
@@ -99,11 +102,19 @@ const productCategories = {
       { name: "Compliance", value: "NEMA VE 1, IEC 61537, BS EN 61537" },
     ],
     images: [
-      "/images/F75-LADDER.JPG",
-      "/images/F100- LADDER.JPG",
-      "/images/F100-WELD LADDER.JPG",
-      "/images/F50- WELD LADDER.JPG",
-      "/images/F75- WELD LADDER.JPG"
+        "/new_Images/90 DEGREE EXTERNAL BEND BOLTED RUNG LADDER.JPG",
+      "/new_Images/90 DEGREE INTERNAL BEND BOLTED RUNG LADDER.JPG",
+      "/new_Images/BOLTED LADDER TRAY ..JPG",
+      "/new_Images/BOLTED RUNG LADDER EQUAL TEE ..JPG",
+      "/new_Images/CENTER BOLTED RUNG LADDER..JPG",
+      "/new_Images/CENTER REDUCER WELDED LADDER.JPG",
+      "/new_Images/CROSS BOLTED RUNG LADDER ..JPG",
+      "/new_Images/F25-V- COUPLING TRAY_1.JPG",
+      "/new_Images/F75- WELD LADDER.JPG",
+      "/new_Images/LEFT REDUCER BOLTED RUNG LADDER ..JPG",
+      "/new_Images/RIGHT REDUCER BOLTED RUNG LADDER ..JPG",
+      "/new_Images/WELDED RUNG LADDER TRAY LEFT REDUCER.JPG",
+      "/new_Images/WELDED RUNG LADDER TRAY RIGHT REDUCER.JPG"
     ],
   },
   "junction-boxes": {
@@ -276,7 +287,8 @@ const productCategories = {
 }
 
 export default function ProductCategoryPage({ params }: { params: { category: string } }) {
-  const category = productCategories[params.category as keyof typeof productCategories]
+  const usableParams = React.use(params) as { category: string };
+  const category = productCategories[usableParams.category as keyof typeof productCategories]
 
   if (!category) {
     notFound()
@@ -284,7 +296,7 @@ export default function ProductCategoryPage({ params }: { params: { category: st
 
   // Select main image based on category name
   let mainImage = category.images[0] || "/placeholder.svg";
-  if (category.name === "Perforated Cable Trays") mainImage = "/images/PERFORATED CABLE TRAY-01.JPG";
+  if (category.name === "Perforated Cable Trays") mainImage = "/real-world-images/Perforated.jpg";
   if (category.name === "Ladder Cable Trays") mainImage = "/images/F75-LADDER.JPG";
   if (category.name === "Raceways") mainImage = "/images/PLAIN RACEWAY WITH CVE-SLEEV.JPG";
   if (category.name === "Junction Boxes") mainImage = "/images/CEILING JUNCTION BOX.JPG";
@@ -295,6 +307,9 @@ export default function ProductCategoryPage({ params }: { params: { category: st
   if (category.name === "Earthing Strips") mainImage = "/images/iso-cert.JPG";
   if (category.name === "Bottle Brackets") mainImage = "/images/dome cover.JPG";
   if (category.name === "Solar Support Structures") mainImage = "/images/vertical elbow OUTSIDE.JPG";
+
+  const [modalOpen, setModalOpen] = React.useState(false);
+  const [modalImage, setModalImage] = React.useState<string | null>(null);
 
   return (
     <main className="flex flex-col min-h-screen pt-40 md:pt-24">
@@ -331,6 +346,29 @@ export default function ProductCategoryPage({ params }: { params: { category: st
         <div className="container mx-auto max-w-6xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
             {/* Product Images */}
+            {/* Modal for enlarged image */}
+            {modalOpen && (
+              <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70" onClick={() => setModalOpen(false)}>
+                <div className="relative bg-white rounded-lg shadow-lg p-6 flex flex-col items-center max-w-lg w-full" onClick={e => e.stopPropagation()}>
+                  <Image
+                    src={modalImage || "/placeholder.svg"}
+                    alt="Accessory Image"
+                    width={500}
+                    height={400}
+                    className="object-contain rounded-lg mb-4"
+                  />
+                  <div className="text-center text-lg font-semibold text-blue-900">
+                    {modalImage?.split("/").pop()?.replace(/\.[^/.]+$/, "")}
+                  </div>
+                  <button
+                    className="absolute top-2 right-2 text-blue-900 hover:text-red-600 text-2xl font-bold"
+                    onClick={() => setModalOpen(false)}
+                  >
+                    &times;
+                  </button>
+                </div>
+              </div>
+            )}
             <div className="space-y-4">
               <div className="relative h-[400px] rounded-lg overflow-hidden border">
                 <Image
@@ -340,9 +378,18 @@ export default function ProductCategoryPage({ params }: { params: { category: st
                   className="object-cover"
                 />
               </div>
+              {/* Accessories Heading */}
+              <h2 className="text-blue-900 text-2xl font-bold mb-4 ">Accessories</h2>
               <div className="grid grid-cols-4 gap-4">
                 {category.images.map((image, index) => (
-                  <div key={index} className="relative h-24 rounded-md overflow-hidden border cursor-pointer">
+                  <div
+                    key={index}
+                    className="relative h-24 rounded-md overflow-hidden border cursor-pointer"
+                    onClick={() => {
+                      setModalImage(image);
+                      setModalOpen(true);
+                    }}
+                  >
                     <Image
                       src={image || "/placeholder.svg"}
                       alt={`${category.name} - Image ${index + 1}`}
@@ -352,7 +399,10 @@ export default function ProductCategoryPage({ params }: { params: { category: st
                   </div>
                 ))}
               </div>
+              {/* Ladder Cable Tray Types Section - Only for ladder-cable-trays */}
+              
             </div>
+            
 
             {/* Product Details */}
             <div>
@@ -381,15 +431,34 @@ export default function ProductCategoryPage({ params }: { params: { category: st
           </div>
         </div>
       </section>
-
+        {usableParams.category === "ladder-cable-trays" && (
+                <section className="mt-10 w-full bg-gradient-to-br from-blue-50 via-white to-blue-100 px-0 md:px-0 py-12 rounded-xl shadow-lg">
+                  <div className="max-w-6xl mx-auto w-full">
+                    <h2 className="text-4xl font-extrabold text-blue-900 mb-12 w-full text-center tracking-tight drop-shadow">Types: of Ladder Type Trays</h2>
+                    <div className="flex flex-col md:flex-row gap-10 w-full justify-center items-stretch">
+                      <div className="flex flex-col items-center bg-white rounded-xl shadow-md p-8 w-full md:w-1/2 border border-blue-200 hover:shadow-xl transition-shadow duration-300">
+                        <Image src="/new_Images/BOLTED LADDER TRAY ..jpg" alt="Bolted Rung Ladder Type Tray" width={320} height={180} className="rounded-lg object-contain mb-6 bg-gray-50 p-2 border border-gray-200" />
+                        <h3 className="text-2xl font-bold text-blue-900 mb-3 text-center">1. Bolted Rung Ladder Type Tray</h3>
+                        <p className="text-gray-700 text-center text-base leading-relaxed">These ladder types are commonly used and are available in multiple specifications. The bolted rung ladder type tray is primarily designed to hold all the power cables and electric cables. These are durable, have high strength, and also corrosion-resistant.</p>
+                      </div>
+                      <div className="flex flex-col items-center bg-white rounded-xl shadow-md p-8 w-full md:w-1/2 border border-blue-200 hover:shadow-xl transition-shadow duration-300">
+                        <Image src="/new_Images/F75- WELD LADDER.JPG" alt="Welded Rung Ladder Type Tray" width={320} height={180} className="rounded-lg object-contain mb-6 bg-gray-50 p-2 border border-gray-200" />
+                        <h3 className="text-2xl font-bold text-blue-900 mb-3 text-center">2. Welded Rung Ladder Type Tray</h3>
+                        <p className="text-gray-700 text-center text-base leading-relaxed">As its name suggests these are a type of ladder tray made up with the use of welding methodology. These are reliable and can perform well in harsh environments. Designed to support the cable system, these are highly reliable to keep it stable.</p>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              )}
       {/* Detailed Information Tabs */}
       <section className="py-12 px-4 md:px-6 lg:px-8 bg-gray-50">
+        
         <div className="container mx-auto max-w-6xl">
           <Tabs defaultValue="specifications">
             <TabsList className="grid w-full grid-cols-3">
-              <TabsTrigger value="specifications" className="text-white">Specifications</TabsTrigger>
-              <TabsTrigger value="benefits" className="text-white">Benefits</TabsTrigger>
-              <TabsTrigger value="applications" className="text-white">Applications</TabsTrigger>
+              <TabsTrigger value="specifications" className="text-black bg-blue-300 border border-blue-900">Specifications</TabsTrigger>
+              <TabsTrigger value="benefits" className="text-black bg-blue-300 border border-blue-900">Benefits</TabsTrigger>
+              <TabsTrigger value="applications" className="text-black bg-blue-300 border border-blue-900">Applications</TabsTrigger>
             </TabsList>
             <TabsContent value="specifications" className="p-6 bg-white rounded-b-lg border border-t-0">
               <h3 className="text-xl font-semibold mb-4 text-blue-900">Technical Specifications</h3>
@@ -564,6 +633,7 @@ export default function ProductCategoryPage({ params }: { params: { category: st
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
                     </tr>
                     <tr className="hover:bg-gray-50">
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">3 mm</td>
@@ -618,6 +688,7 @@ export default function ProductCategoryPage({ params }: { params: { category: st
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
                     </tr>
                     <tr className="hover:bg-gray-50">
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">3 mm</td>
@@ -647,12 +718,12 @@ export default function ProductCategoryPage({ params }: { params: { category: st
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NA</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
@@ -667,8 +738,9 @@ export default function ProductCategoryPage({ params }: { params: { category: st
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
@@ -726,6 +798,62 @@ export default function ProductCategoryPage({ params }: { params: { category: st
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50">
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">3 mm</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900 font-semibold"></td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900" colSpan={12}>Based on Customer Requirement</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50">
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900 font-semibold" rowSpan={4}>4</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">1.6 mm</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900 font-semibold">75 mm</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NA</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50">
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">2 mm</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900 font-semibold"></td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NA</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50">
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">2.5 mm</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900 font-semibold"></td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
                     </tr>
                     <tr className="hover:bg-gray-50">
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">3 mm</td>
@@ -768,6 +896,117 @@ export default function ProductCategoryPage({ params }: { params: { category: st
                     <tr className="hover:bg-gray-50">
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">2.5 mm</td>
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900 font-semibold"></td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50">
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">3 mm</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900 font-semibold"></td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900" colSpan={12}>Based on Customer Requirement</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50">
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900 font-semibold" rowSpan={4}>5</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">1.6 mm</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900 font-semibold">100 mm</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NA</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50">
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">2 mm</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900 font-semibold"></td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NA</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50">
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">2.5 mm</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900 font-semibold"></td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50">
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">3 mm</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900 font-semibold"></td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900" colSpan={12}>Based on Customer Requirement</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50">
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900 font-semibold" rowSpan={4}>4</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">1.6 mm</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900 font-semibold">75 mm</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NA</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50">
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">2 mm</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900 font-semibold"></td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NA</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50">
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">2.5 mm</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900 font-semibold"></td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
@@ -853,9 +1092,11 @@ export default function ProductCategoryPage({ params }: { params: { category: st
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
@@ -865,139 +1106,7 @@ export default function ProductCategoryPage({ params }: { params: { category: st
                     <tr className="hover:bg-gray-50">
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">3 mm</td>
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900 font-semibold"></td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
-                    </tr>
-                    <tr className="hover:bg-gray-50">
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900 font-semibold" rowSpan={4}>2</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">1.6 mm</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900 font-semibold">70 MM</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NA</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NA</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NA</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NA</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NA</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NA</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NA</td>
-                    </tr>
-                    <tr className="hover:bg-gray-50">
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">2 mm</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900 font-semibold"></td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NA</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NA</td>
-                    </tr>
-                    <tr className="hover:bg-gray-50">
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">2.5 mm</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900 font-semibold"></td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
-                    </tr>
-                    <tr className="hover:bg-gray-50">
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">3 mm</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900 font-semibold"></td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
-                    </tr>
-                    <tr className="hover:bg-gray-50">
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900 font-semibold" rowSpan={4}>3</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">1.6 mm</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900 font-semibold">100 mm</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NA</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NA</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NA</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NA</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NA</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NA</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NA</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NA</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NA</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NA</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NA</td>
-                    </tr>
-                    <tr className="hover:bg-gray-50">
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">2 mm</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900 font-semibold"></td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NA</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NA</td>
-                    </tr>
-                    <tr className="hover:bg-gray-50">
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">2.5 mm</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900 font-semibold"></td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
-                    </tr>
-                    <tr className="hover:bg-gray-50">
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">3 mm</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900 font-semibold"></td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900" colSpan={12}>Based on Customer Requirement</td>
                     </tr>
                   </tbody>
                 </table>
