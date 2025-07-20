@@ -437,7 +437,7 @@ export default function ProductCategoryPage({ params }: { params: { category: st
                     <h2 className="text-4xl font-extrabold text-blue-900 mb-12 w-full text-center tracking-tight drop-shadow">Types: of Ladder Type Trays</h2>
                     <div className="flex flex-col md:flex-row gap-10 w-full justify-center items-stretch">
                       <div className="flex flex-col items-center bg-white rounded-xl shadow-md p-8 w-full md:w-1/2 border border-blue-200 hover:shadow-xl transition-shadow duration-300">
-                        <Image src="/new_Images/BOLTED LADDER TRAY ..jpg" alt="Bolted Rung Ladder Type Tray" width={320} height={180} className="rounded-lg object-contain mb-6 bg-gray-50 p-2 border border-gray-200" />
+                        <Image src="/new_Images/BOLTED LADDER TRAY ..JPG" alt="Bolted Rung Ladder Type Tray" width={320} height={180} className="rounded-lg object-contain mb-6 bg-gray-50 p-2 border border-gray-200" />
                         <h3 className="text-2xl font-bold text-blue-900 mb-3 text-center">1. Bolted Rung Ladder Type Tray</h3>
                         <p className="text-gray-700 text-center text-base leading-relaxed">These ladder types are commonly used and are available in multiple specifications. The bolted rung ladder type tray is primarily designed to hold all the power cables and electric cables. These are durable, have high strength, and also corrosion-resistant.</p>
                       </div>
