@@ -119,8 +119,18 @@ const productCategories = {
   },
   "junction-boxes": {
     name: "Junction Boxes",
-    description: "Secure enclosures for cable connections and electrical junctions.",
-    longDescription: "Junction Boxes provide safe and secure enclosures for cable connections and electrical junctions, protecting them from dust, moisture, and mechanical damage. They are essential for maintaining the integrity and safety of electrical systems in a wide range of environments.",
+    description: "Our organization specializes in providing a high-quality and wide range of junction boxes that offer optimum safety, security, and access to wiring. The junction boxes are used extensively for connecting the wires that allow easy access, when repairing is required. Our junction boxes are made up of high-grade raw materials. ",
+    longDescription: `<div style='text-align:left;'>
+      Junction boxes are considered to be an important solution of the electrical wiring systems for buildings and homes. The junction boxes are made up of materials such as metals and plastics that help in safely protecting the structuring of the electrical connections. The electrical casings typically come in two sizes.<br/><br/>
+      The junction boxes are primary used for protecting the multiple wires such as:<br/>
+      <ul style='margin-left:1.5em;'>
+        <b><li>->Hot (black)</li>
+        <li>->White (neutral)</li>
+        <li>->Grounding (green or copper)</li></b>
+      </ul>
+      <br/>
+      These junction boxes protect the wires, by keeping out all the dirt and debris and at the same time prevent the moisture from getting into the box.
+    </div>`,
     features: [
       "Robust construction for enhanced protection",
       "Available in various sizes and configurations",
@@ -191,10 +201,23 @@ const productCategories = {
       { name: "Compliance", value: "NEMA VE 1, IEC 61537" },
     ],
     images: [
-      "/images/cable duct accessories-01--clr.JPG",
-      "/images/COUPLING TRAYS.JPG",
-      "/images/F25-V- COUPLING TRAY.JPG",
-      "/images/F75-V- COUPLING TRAYS.JPG"
+      "/new_Images/CROSS BEND ..JPG",
+      "/new_Images/CROSS BEND ._1.JPG",
+      "/new_Images/CROSS..JPG",
+      "/new_Images/CROSS BEND ..JPG",
+      "/new_Images/EQUAL TEE._1.JPG",
+      "/new_Images/90 DEGREE HORIZONTAL BEND ..JPG",
+      "/new_Images/90 DEGREE HORIZONTAL BEND ._1.JPG",
+      "/new_Images/90 DEGREE VERTICAL INTERNAL BEND ._1.JPG",
+      "/new_Images/90 DEGREE HORIZONTAL BEND..JPG",
+      "/new_Images/90 DEGREE VERTICAL INTERNAL BEND ..JPG",
+      "/new_Images/BOLTED RUNG LADDER EQUAL TEE ..JPG",
+      "/new_Images/HORIZONTAL BEND ..JPG",
+      "/new_Images/90 DEGREE VERTICAL EXTERNAL BEND ._1.JPG",
+      "/new_Images/90 DEGREE HORIZONTAL BEND ._2.JPG",
+      "/new_Images/90 DEGREE HORIZONTAL BEND._1.JPG",
+      "/new_Images/EQUAL TEE..JPG",
+      "/new_Images/90 DEGREE VERTICAL EXTERNAL BEND ..JPG"
     ],
   },
   "support-systems": {
@@ -239,15 +262,13 @@ const productCategories = {
   },
   "raceways": {
     name: "Raceways",
-    description: "Enclosed pathways for protecting and organizing cables in various environments, providing complete protection from external elements.",
-    longDescription: "Raceways provide complete enclosure for cables, protecting them from dust, moisture, and mechanical damage. Available in various configurations including plain, flanged, and joggled designs.",
+    description: "The product comes in a strong structure that is safe for the employees also to use. Secondly, raceways are easy to install as it hardly takes a few minutes to install them perfectly, also the design makes it super convenient to route the cable whenever needed. Since raceways are made with premium quality materials, they are strong and easy to maintain. ",
+    longDescription: "The raceway is a prominent category of cable trays that is used mainly for routing cables. This category of cable tray is ideal for managing cables or wires of multiple categories of machinery as well as communication rooms. Raceways give full protection from the dirt, debris, or any additional particle that could harm the wires. Raceways add grace to the overall look of the interiors. As per the look of the interiors, the colour and design of the raceway can be changed. There is a current usage of electric raceways that are safe to be used in the industries.",
     features: [
-      "Complete cable protection",
-      "Dust and moisture resistant",
-      "Multiple configuration options",
-      "Easy installation and maintenance",
-      "Smooth interior for easy cable pulling",
-      "Stackable design for space efficiency",
+      "Anti-corrosive",
+      "Ideal for handling extreme pressures and weight",
+      "Made with high-quality materials for enhanced durability",
+      "Easy to maintain and install",
     ],
     benefits: [
       "Maximum cable protection",
@@ -407,7 +428,7 @@ export default function ProductCategoryPage({ params }: { params: { category: st
             {/* Product Details */}
             <div>
               <h2 className="text-3xl font-bold tracking-tight mb-4 text-blue-900">{category.name}</h2>
-              <p className="mb-6 text-black">{category.longDescription}</p>
+              <div className="mb-6 text-black text-left" dangerouslySetInnerHTML={{ __html: category.longDescription }} />
 
               <div className="space-y-6">
                 <div>
@@ -450,6 +471,113 @@ export default function ProductCategoryPage({ params }: { params: { category: st
                   </div>
                 </section>
               )}
+      {/* Bends & Reducers types - Only for cable-tray-accessories */}
+      {usableParams.category === "cable-tray-accessories" && (
+        <section className="mt-10 w-full bg-gradient-to-br from-blue-50 via-white to-blue-100 px-0 md:px-0 py-12 rounded-xl shadow-lg">
+          <div className="max-w-6xl mx-auto w-full">
+            <h2 className="text-4xl font-extrabold text-blue-900 mb-12 w-full text-center tracking-tight drop-shadow">Bends & Reducers types</h2>
+            {/* 1. Cross Bend */}
+            <div className="mb-10">
+              <h3 className="text-2xl font-bold text-blue-900 mb-2">1. <span className="font-semibold">Cross Bend</span></h3>
+              <p className="text-gray-700 mb-4">This is a cross-shaped bend, which is used to collaborate or work as a middle point of pass for wires coming from different directions.</p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div className="relative h-48 rounded-lg overflow-hidden border bg-white flex items-center justify-center">
+                  <Image src="/new_Images/CROSS BEND ..JPG" alt="Cross Bend 1" fill className="object-contain" />
+                </div>
+                <div className="relative h-48 rounded-lg overflow-hidden border bg-white flex items-center justify-center">
+                  <Image src="/new_Images/CROSS..JPG" alt="Cross Bend 2" fill className="object-contain" />
+                </div>
+              </div>
+            </div>
+            {/* 2. Reducer */}
+            <div className="mb-10">
+              <h3 className="text-2xl font-bold text-blue-900 mb-2">2. <span className="font-semibold">Reducer</span></h3>
+              <p className="text-gray-700 mb-4">It is used to organize multiple cables coming from a single direction. It makes them together so that they cannot move out in undesirable directions.</p>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                <div className="relative h-48 rounded-lg overflow-hidden border bg-white flex items-center justify-center">
+                  <Image src="/new_Images/RIGHT REDUCER..JPG" alt="Reducer 1" fill className="object-contain" />
+                </div>
+                <div className="relative h-48 rounded-lg overflow-hidden border bg-white flex items-center justify-center">
+                  <Image src="/new_Images/LEFT REDUCER ..JPG" alt="Reducer 2" fill className="object-contain" />
+                </div>
+                <div className="relative h-48 rounded-lg overflow-hidden border bg-white flex items-center justify-center">
+                  <Image src="/new_Images/LEFT REDUCER BOLTED RUNG LADDER ..JPG" alt="Reducer 3" fill className="object-contain" />
+                </div>
+                <div className="relative h-48 rounded-lg overflow-hidden border bg-white flex items-center justify-center">
+                  <Image src="/new_Images/WELDED RUNG LADDER TRAY RIGHT REDUCER.JPG" alt="Reducer 3" fill className="object-contain" />
+                </div>
+                <div className="relative h-48 rounded-lg overflow-hidden border bg-white flex items-center justify-center">
+                  <Image src="/new_Images/WELDED RUNG LADDER TRAY LEFT REDUCER.JPG" alt="Reducer 3" fill className="object-contain" />
+                </div>
+                <div className="relative h-48 rounded-lg overflow-hidden border bg-white flex items-center justify-center">
+                  <Image src="/new_Images/CENTERAL REDUCER ._1.JPG" alt="Reducer 3" fill className="object-contain" />
+                </div>
+              </div>
+            </div>
+            {/* 3. Horizontal bend 90 degrees */}
+            <div className="mb-10">
+              <h3 className="text-2xl font-bold text-blue-900 mb-2">3. <span className="font-semibold">Horizontal bend 90 degrees</span></h3>
+              <p className="text-gray-700 mb-4">It is a horizontal bend that is inclined at 90 degrees. This type of bend is used for special requirements required in any system.</p>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                <div className="relative h-48 rounded-lg overflow-hidden border bg-white flex items-center justify-center">
+                  <Image src="/new_Images/90 DEGREE HORIZONTAL BEND ..JPG" alt="Horizontal Bend 1" fill className="object-contain" />
+                </div>
+                <div className="relative h-48 rounded-lg overflow-hidden border bg-white flex items-center justify-center">
+                  <Image src="/new_Images/90 DEGREE HORIZONTAL BEND ._1.JPG" alt="Horizontal Bend 2" fill className="object-contain" />
+                </div>
+                <div className="relative h-48 rounded-lg overflow-hidden border bg-white flex items-center justify-center">
+                  <Image src="/new_Images/90 DEGREE HORIZONTAL BEND..JPG" alt="Horizontal Bend 2" fill className="object-contain" />
+                </div>
+                <div className="relative h-48 rounded-lg overflow-hidden border bg-white flex items-center justify-center">
+                  <Image src="/new_Images/HORIZONTAL BEND ..JPG" alt="Horizontal Bend 2" fill className="object-contain" />
+                </div>
+                <div className="relative h-48 rounded-lg overflow-hidden border bg-white flex items-center justify-center">
+                  <Image src="/new_Images/HORIZNTL BEND.JPG" alt="Horizontal Bend 2" fill className="object-contain" />
+                </div>
+              </div>
+            </div>
+            {/* 4. Tee Bend */}
+            <div className="mb-10">
+              <h3 className="text-2xl font-bold text-blue-900 mb-2">4. <span className="font-semibold">Tee Bend</span></h3>
+              <p className="text-gray-700 mb-4">It is shaped in the form of a ‘T’ and is used to assemble cables coming from two different directions and send them in single direction.</p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div className="relative h-48 rounded-lg overflow-hidden border bg-white flex items-center justify-center">
+                  <Image src="/new_Images/EQUAL TEE._1.JPG" alt="Tee Bend 1" fill className="object-contain" />
+                </div>
+                <div className="relative h-48 rounded-lg overflow-hidden border bg-white flex items-center justify-center">
+                  <Image src="/new_Images/EQUAL T.JPG" alt="Tee Bend 2" fill className="object-contain" />
+                </div>
+              </div>
+            </div>
+            {/* 5. Vertical Internal Bend */}
+            <div className="mb-10">
+              <h3 className="text-2xl font-bold text-blue-900 mb-2">5. <span className="font-semibold">Vertical Internal Bend</span></h3>
+              <p className="text-gray-700 mb-4">It is a vertical bend that is used in the internal applications in a system. It plays a vital role wherever necessary.</p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div className="relative h-48 rounded-lg overflow-hidden border bg-white flex items-center justify-center">
+                  <Image src="/new_Images/90 DEGREE VERTICAL INTERNAL ..JPG" alt="Vertical Internal Bend 1" fill className="object-contain" />
+                </div>
+                <div className="relative h-48 rounded-lg overflow-hidden border bg-white flex items-center justify-center">
+                  <Image src="/new_Images/90 DEGREE VERTICAL INTERNAL BEND ..JPG" alt="Vertical Internal Bend 1" fill className="object-contain" />
+                </div>
+              </div>
+            </div>
+            {/* 6. Vertical External Bend */}
+            <div className="mb-4">
+              <h3 className="text-2xl font-bold text-blue-900 mb-2">6. <span className="font-semibold">Vertical External Bend</span></h3>
+              <p className="text-gray-700 mb-4">As its name suggests, it is a vertical bend that is used in the external applications of any system.</p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div className="relative h-48 rounded-lg overflow-hidden border bg-white flex items-center justify-center">
+                  <Image src="/new_Images/90 DEGREE VERTICAL EXTERNAL BEND ..JPG" alt="Vertical External Bend 1" fill className="object-contain" />
+                </div>
+                <div className="relative h-48 rounded-lg overflow-hidden border bg-white flex items-center justify-center">
+                  <Image src="/new_Images/90 DEGREE VERTICAL EXTERNAL..JPG" alt="Vertical External Bend 2" fill className="object-contain" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
       {/* Detailed Information Tabs */}
       <section className="py-12 px-4 md:px-6 lg:px-8 bg-gray-50">
         
