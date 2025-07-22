@@ -38,7 +38,7 @@ const productCategories = [
   },
   {
     id: "support-systems",
-    name: "Support Systems",
+    name: "Cable Tray Support System",
     description: "Robust supports for secure installation of cable management systems",
     image: "/images/90 vertical ELBOW INSIDE.JPG",
   },
@@ -109,7 +109,7 @@ export default function ProductsPage() {
               if (category.name === "Raceways") imagePath = "/images/PLAIN RACEWAY WITH CVE-SLEEV.JPG";
               if (category.name === "Junction Boxes") imagePath = "/images/CEILING JUNCTION BOX.JPG";
               if (category.name === "Cable Tray Accessories") imagePath = "/images/cable duct accessories-01--clr.JPG";
-              if (category.name === "Support Systems") imagePath = "/images/90 vertical ELBOW INSIDE.JPG";
+              if (category.name === "Cable Tray Support System") imagePath = "/images/90 vertical ELBOW INSIDE.JPG";
               if (category.name === "Strut Channel Support Systems") imagePath = "/images/steel-factories.jpg";
               if (category.name === "Cable Binders") imagePath = "/images/joogled floor wire duct with cvr.JPG";
               if (category.name === "Earthing Strips") imagePath = "/images/iso-cert.JPG";

@@ -15,7 +15,7 @@ const productCategories = [
   { name: "Raceways", href: "/products/raceways" },
   { name: "Junction Boxes", href: "/products/junction-boxes" },
   { name: "Cable Tray Accessories", href: "/products/cable-tray-accessories" },
-  { name: "Support Systems", href: "/products/cable-tray-support-systems" },
+  { name: "Cable Tray Support System", href: "/products/cable-tray-support-systems" },
 ]
 
 export default function Header() {

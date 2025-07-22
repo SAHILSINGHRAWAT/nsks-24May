@@ -221,9 +221,9 @@ const productCategories = {
     ],
   },
   "support-systems": {
-    name: "Support Systems",
+    name: "Cable Tray Support System",
     description: "Robust supports for secure installation of cable management systems.",
-    longDescription: "Support Systems provide the necessary structural integrity for cable trays and raceways, ensuring safe and reliable installation in a variety of environments. These systems include brackets, hangers, and other mounting hardware designed for strength and durability.",
+    longDescription: " A cable tray support system is used to make a well-organized arrangement for a properly designed data communications system. This system is designed and assembled as per the requirement and plays a vital role where people have to deal with huge numbers of cables coming from different directions. Here are some of the major components of the cable tray support system you will get at NSKS",
     features: [
       "High load-bearing capacity",
       "Versatile mounting options",
@@ -254,10 +254,12 @@ const productCategories = {
       { name: "Compliance", value: "NEMA VE 1, IEC 61537" },
     ],
     images: [
-      "/images/90 vertical ELBOW INSIDE.JPG",
-      "/images/VERTICAL ELBOW INSIDE.JPG",
-      "/images/VERTICAL ELBOW OUTSIDE (2).JPG",
-      "/images/vertical elbow OUTSIDE.JPG"
+      "/new_Images/clamps.png",
+      "/new_Images/Threaded Rod1.png",
+      "/new_Images/Threaded Rod12.png",
+      "/new_Images/slotted Z section.png",
+      "/new_Images/slotted z section2.png",
+      "/new_Images/slotted c section.png"
     ],
   },
   "raceways": {
@@ -304,7 +306,188 @@ const productCategories = {
       "/images/FLANGE RACEWAY.JPG"
     ],
   },
-  // Additional product categories would be defined here
+
+  "strut-channel-support-system": {
+    name: "Strut Channel Support System",
+    description: "Our Strut Channel Support Systems are engineered for robust, modular, and flexible support of cable trays, piping, and mechanical systems in industrial and commercial environments.",
+    longDescription: "A strut channel is used to brace, mount, connect, and support structural loads that are light in weight. These can include data and electrical wire, pipes, and several mechanical systems like ventilation and air conditioning. NSKS offers you subtle and effective strut channel support systems that can satisfy your needs without any hurdle.",
+    features: [
+      "Modular and easy to assemble",
+      "Corrosion-resistant finishes",
+      "High load-bearing capacity",
+      "Compatible with a wide range of fittings and accessories",
+      "Customizable for specific project needs",
+      "Low maintenance requirements"
+    ],
+    benefits: [
+      "Reduces installation time and labor costs",
+      "Provides long-term durability and safety",
+      "Allows for future expansion and reconfiguration",
+      "Supports heavy loads and complex layouts",
+      "Minimizes downtime during maintenance"
+    ],
+    applications: [
+      "Mechanical & Electrical",
+      "Railways & Tunnels",
+      "Oil & Gas",
+      "HVAC Industries",
+      "Solar"
+    ],
+    specifications: [
+      { name: "Material", value: "Pre-galvanized steel, Hot-dip galvanized steel, Stainless steel" },
+      { name: "Channel Sizes", value: "41x21mm, 41x41mm, 41x62mm, custom sizes available" },
+      { name: "Length", value: "3m standard (custom lengths available)" },
+      { name: "Finish Options", value: "Pre-galvanized, Hot-dip galvanized, Powder coated, Stainless steel" },
+      { name: "Compliance", value: "BS 6946, DIN 1025, ASTM A653" }
+    ],
+    images: [
+      "/new_Images/S1.JPG",
+      "/new_Images/Strut Channel.PNG",
+      "/new_Images/fiber_glass.jpg",
+      "/new_Images/pro-strut-support-system-1.png",
+      "/new_Images/pro-strut-support-system-2.png",
+      "/new_Images/pro-strut-support-system-3.png",
+    ]
+  },
+  "bottle-bracket": {
+    name: "Bottle Bracket",
+    description: "Durable and secure bottle brackets for industrial and commercial applications.",
+    longDescription: "Bottle brackets are designed to securely hold and support bottles, cylinders, or similar containers in a variety of settings. Manufactured from robust materials, they ensure safety and stability, preventing accidental tipping or movement.",
+    features: [
+      "Heavy-duty construction",
+      "Corrosion-resistant finish",
+      "Easy installation",
+      "Adjustable sizes available",
+      "Suitable for wall or frame mounting"
+    ],
+    benefits: [
+      "Prevents accidental tipping",
+      "Ensures safe storage of bottles and cylinders",
+      "Reduces risk of workplace accidents",
+      "Long service life"
+    ],
+    applications: [
+      "Laboratories",
+      "Industrial plants",
+      "Medical facilities",
+      "Workshops"
+    ],
+    specifications: [
+      { name: "Material", value: "Steel, Stainless steel" },
+      { name: "Mounting Options", value: "Wall, frame" },
+      { name: "Finish Options", value: "Galvanized, Powder coated, Stainless steel" },
+      { name: "Sizes", value: "Standard and custom sizes available" }
+    ],
+    images: [
+      "/new_Images/bottle_bracket.png",
+    ]
+  },
+  "earthing-strips": {
+    name: "Earthing Strips",
+    description: "Reliable earthing strips for safe electrical grounding in industrial and commercial installations.",
+    longDescription: "Earthing strips are essential components for electrical safety, providing a low-resistance path to ground. Made from high-conductivity materials, they are used in substations, power plants, and building installations to ensure effective grounding and protection against electrical faults.",
+    features: [
+      "High electrical conductivity",
+      "Corrosion-resistant materials",
+      "Available in various sizes and thicknesses",
+      "Easy to install and maintain",
+      "Compliant with international standards"
+    ],
+    benefits: [
+      "Ensures safe dissipation of fault currents",
+      "Reduces risk of electrical hazards",
+      "Long-lasting performance",
+      "Suitable for harsh environments"
+    ],
+    applications: [
+      "Substations",
+      "Industrial plants",
+      "Commercial buildings",
+      "Power distribution systems"
+    ],
+    specifications: [
+      { name: "Material", value: "Copper, Galvanized iron, Stainless steel" },
+      { name: "Width Range", value: "25mm to 100mm" },
+      { name: "Thickness Range", value: "3mm to 10mm" },
+      { name: "Finish Options", value: "Bare, Galvanized, Tinned" },
+      { name: "Compliance", value: "IS 3043, IEC 62561" }
+    ],
+    images: [
+      "/new_Images/earthing-strip-1.jpg",
+      "/new_Images/earthing-strip-2.jpg"
+    ]
+  },
+  "cable-binders": {
+    name: "Cable Binder",
+    description: "Durable cable binders for organizing and securing cables in industrial and commercial settings.",
+    longDescription: "Cable binders are essential for bundling, organizing, and securing cables in a wide range of applications. Made from high-quality materials, they ensure cables remain neat, safe, and easy to manage.",
+    features: [
+      "Strong and flexible construction",
+      "Resistant to wear and tear",
+      "Easy to install and remove",
+      "Available in various sizes and materials",
+      "Reusable and cost-effective"
+    ],
+    benefits: [
+      "Improves cable management and safety",
+      "Reduces cable clutter",
+      "Prevents cable damage",
+      "Facilitates maintenance and troubleshooting"
+    ],
+    applications: [
+      "Data centers",
+      "Industrial plants",
+      "Commercial buildings",
+      "Telecommunications",
+      "Electrical installations"
+    ],
+    specifications: [
+      { name: "Material", value: "Nylon, Stainless steel, Plastic" },
+      { name: "Length Range", value: "100mm to 1000mm" },
+      { name: "Width Range", value: "2mm to 10mm" },
+      { name: "Color Options", value: "Black, White, Custom" },
+      { name: "Reusable", value: "Yes/No (varies by type)" }
+    ],
+    images: [
+      "/new_Images/cable.png",
+      "/new_Images/cable2.JPG"
+    ]
+  },
+  "solar-support-structure": {
+    name: "Solar Support Structures",
+    description: "Engineered support structures for solar panel installations, ensuring durability and optimal performance.",
+    longDescription: "Solar support structures are designed to securely mount solar panels in rooftop, ground, or custom installations. Made from corrosion-resistant materials, they withstand harsh weather and provide long-term stability for solar arrays.",
+    features: [
+      "Weather-resistant construction",
+      "Customizable for various panel sizes",
+      "Easy installation and maintenance",
+      "High structural strength",
+      "Suitable for rooftop and ground mounting"
+    ],
+    benefits: [
+      "Maximizes solar panel efficiency",
+      "Ensures long-term durability",
+      "Reduces installation time",
+      "Supports a wide range of solar projects"
+    ],
+    applications: [
+      "Rooftop solar installations",
+      "Ground-mounted solar farms",
+      "Commercial and industrial solar projects",
+      "Off-grid solar systems"
+    ],
+    specifications: [
+      { name: "Material", value: "Aluminum, Galvanized steel, Stainless steel" },
+      { name: "Mounting Types", value: "Rooftop, Ground, Custom" },
+      { name: "Finish Options", value: "Anodized, Galvanized, Powder coated" },
+      { name: "Compliance", value: "IEC 61215, UL 2703" }
+    ],
+    images: [
+      "/new_Images/solar-support-1.jpg",
+      "/new_Images/solar-support-2.jpg",
+      "/new_Images/solar-support-3.jpg"
+    ]
+  }
 }
 
 export default function ProductCategoryPage({ params }: { params: { category: string } }) {
@@ -322,8 +505,8 @@ export default function ProductCategoryPage({ params }: { params: { category: st
   if (category.name === "Raceways") mainImage = "/images/PLAIN RACEWAY WITH CVE-SLEEV.JPG";
   if (category.name === "Junction Boxes") mainImage = "/images/CEILING JUNCTION BOX.JPG";
   if (category.name === "Cable Tray Accessories") mainImage = "/images/cable duct accessories-01--clr.JPG";
-  if (category.name === "Support Systems") mainImage = "/images/90 vertical ELBOW INSIDE.JPG";
-  if (category.name === "Strut Channel Support Systems") mainImage = "/images/steel-factories.jpg";
+  if (category.name === "Cable Tray Support System") mainImage = "/images/90 vertical ELBOW INSIDE.JPG";
+  if (category.name === "Strut Channel Support Systems") mainImage = "/new_Images/S1.jpg"; // Updated to new image path
   if (category.name === "Cable Binders") mainImage = "/images/joogled floor wire duct with cvr.JPG";
   if (category.name === "Earthing Strips") mainImage = "/images/iso-cert.JPG";
   if (category.name === "Bottle Brackets") mainImage = "/images/dome cover.JPG";
@@ -578,7 +761,146 @@ export default function ProductCategoryPage({ params }: { params: { category: st
           </div>
         </section>
       )}
-      {/* Detailed Information Tabs */}
+      {usableParams.category === "strut-channel-support-system" && (
+        <section className="mt-10 w-full bg-gradient-to-br from-blue-50 via-white to-blue-100 px-0 md:px-0 py-12 rounded-xl shadow-lg">
+          <div className="max-w-6xl mx-auto w-full">
+            <h2 className="text-3xl font-extrabold text-blue-900 mb-8 w-full text-center tracking-tight drop-shadow">Strut Channel Product Table</h2>
+            <div className="overflow-x-auto bg-white rounded-lg shadow">
+              <table className="w-full border-collapse text-sm">
+                <thead>
+                  <tr className="bg-blue-900 text-white">
+                    <th className="border border-gray-300 px-4 py-3 text-left font-semibold">S.No</th>
+                    <th className="border border-gray-300 px-4 py-3 text-left font-semibold">Section</th>
+                    <th className="border border-gray-300 px-4 py-3 text-left font-semibold">Thickness(t)mm</th>
+                    <th className="border border-gray-300 px-4 py-3 text-left font-semibold">Product Name</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td className="border border-gray-300 px-4 py-3">1</td>
+                    <td className="border border-gray-300 px-4 py-3">40x20x2/0mm</td>
+                    <td className="border border-gray-300 px-4 py-3">2.0mm</td>
+                    <td className="border border-gray-300 px-4 py-3">C-Strut 4020 Single</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-4 py-3">2</td>
+                    <td className="border border-gray-300 px-4 py-3">40x20x2/0mm (Welded)</td>
+                    <td className="border border-gray-300 px-4 py-3">2.0mm</td>
+                    <td className="border border-gray-300 px-4 py-3">C-Strut 4020 Double</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-4 py-3">3</td>
+                    <td className="border border-gray-300 px-4 py-3">41x41x2.5mm</td>
+                    <td className="border border-gray-300 px-4 py-3">2.5mm</td>
+                    <td className="border border-gray-300 px-4 py-3">C-Strut 4141 Single</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-4 py-3">4</td>
+                    <td className="border border-gray-300 px-4 py-3">41x41x2.5mm (Welded)</td>
+                    <td className="border border-gray-300 px-4 py-3">2.5mm</td>
+                    <td className="border border-gray-300 px-4 py-3">C-Strut 4141 Double</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+      )}
+      {/* Cable Tray Support System Details - Only for cable tray support systems */}
+      {usableParams.category === "support-systems" && (
+        <section className="mt-10 w-full bg-gradient-to-br from-blue-50 via-white to-blue-100 px-0 md:px-0 py-12 rounded-xl shadow-lg">
+          <div className="max-w-6xl mx-auto w-full">
+            <h2 className="text-4xl font-extrabold text-blue-900 mb-12 w-full text-center tracking-tight drop-shadow">Major Components of Cable Tray Support System</h2>
+            {/* Clamps */}
+            <div className="mb-10">
+              <h3 className="text-xl font-bold text-blue-900 mb-2">• Clamps</h3>
+              <p className="text-gray-700 mb-4">These are used to hold the cables in a cable tray support system. It is a small but important part of the entire system. It provides good grip for holding cables.</p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div className="relative h-48 rounded-lg overflow-hidden border bg-white flex items-center justify-center">
+                  <Image src="/new_Images/clamps.png" alt="Clamp" fill className="object-contain" />
+                </div>
+              </div>
+            </div>
+            {/* Threaded Rod */}
+            <div className="mb-10">
+              <h3 className="text-xl font-bold text-blue-900 mb-2">• Threaded Rod</h3>
+              <p className="text-gray-700 mb-4">It provides strength and stability to the cable tray support system. These rods are threaded that makes them more stable to hold the grip. Here are the threaded rod dimensions available at NSKS.</p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
+                <div className="relative h-48 rounded-lg overflow-hidden border bg-white flex items-center justify-center">
+                  <Image src="/new_Images/Threaded Rod1.png" alt="Threaded Rod 1" fill className="object-contain" />
+                </div>
+                <div className="relative h-48 rounded-lg overflow-hidden border bg-white flex items-center justify-center">
+                  <Image src="/new_Images/Threaded Rod12.png" alt="Threaded Rod 2" fill className="object-contain" />
+                </div>
+              </div>
+              <div className="overflow-x-auto mb-6">
+                <table className="w-full border-collapse text-sm bg-white rounded-lg shadow">
+                  <thead>
+                    <tr className="bg-blue-900 text-white">
+                      <th className="border border-gray-300 px-4 py-3 text-left font-semibold">S.No</th>
+                      <th className="border border-gray-300 px-4 py-3 text-left font-semibold">Product Name</th>
+                      <th className="border border-gray-300 px-4 py-3 text-left font-semibold">Standard Length (mm)</th>
+                      <th className="border border-gray-300 px-4 py-3 text-left font-semibold">Thickness (mm)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td className="border border-gray-300 px-4 py-3">1</td><td className="border border-gray-300 px-4 py-3">Threaded Rod</td><td className="border border-gray-300 px-4 py-3">1000</td><td className="border border-gray-300 px-4 py-3">6</td></tr>
+                    <tr><td className="border border-gray-300 px-4 py-3">2</td><td className="border border-gray-300 px-4 py-3">Threaded Rod</td><td className="border border-gray-300 px-4 py-3">1000</td><td className="border border-gray-300 px-4 py-3">8</td></tr>
+                    <tr><td className="border border-gray-300 px-4 py-3">3</td><td className="border border-gray-300 px-4 py-3">Threaded Rod</td><td className="border border-gray-300 px-4 py-3">1000</td><td className="border border-gray-300 px-4 py-3">10</td></tr>
+                    <tr><td className="border border-gray-300 px-4 py-3">4</td><td className="border border-gray-300 px-4 py-3">Threaded Rod</td><td className="border border-gray-300 px-4 py-3">1500</td><td className="border border-gray-300 px-4 py-3">10</td></tr>
+                    <tr><td className="border border-gray-300 px-4 py-3">5</td><td className="border border-gray-300 px-4 py-3">Threaded Rod</td><td className="border border-gray-300 px-4 py-3">3000</td><td className="border border-gray-300 px-4 py-3">10</td></tr>
+                    <tr><td className="border border-gray-300 px-4 py-3">6</td><td className="border border-gray-300 px-4 py-3">Threaded Rod</td><td className="border border-gray-300 px-4 py-3">1000</td><td className="border border-gray-300 px-4 py-3">12</td></tr>
+                    <tr><td className="border border-gray-300 px-4 py-3">7</td><td className="border border-gray-300 px-4 py-3">Threaded Rod</td><td className="border border-gray-300 px-4 py-3">3000</td><td className="border border-gray-300 px-4 py-3">12</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            {/* Slotted Z Section */}
+            <div className="mb-10">
+              <h3 className="text-xl font-bold text-blue-900 mb-2">• Slotted Z Section</h3>
+              <p className="text-gray-700 mb-4">As its name suggests, it is a z shaped slotted section used in a cable tray support system. It is used as per the requirement in the system. We are offering you the slotted Z section in the given dimensions.</p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
+                <div className="relative h-48 rounded-lg overflow-hidden border bg-white flex items-center justify-center">
+                  <Image src="/new_Images/slotted Z section.png" alt="Slotted Z Section 1" fill className="object-contain" />
+                </div>
+                <div className="relative h-48 rounded-lg overflow-hidden border bg-white flex items-center justify-center">
+                  <Image src="/new_Images/slotted z section2.png" alt="Slotted Z Section 2" fill className="object-contain" />
+                </div>
+              </div>
+              <div className="overflow-x-auto mb-6">
+                <table className="w-full border-collapse text-sm bg-white rounded-lg shadow">
+                  <thead>
+                    <tr className="bg-blue-900 text-white">
+                      <th className="border border-gray-300 px-4 py-3 text-left font-semibold">S.No</th>
+                      <th className="border border-gray-300 px-4 py-3 text-left font-semibold">Product Name</th>
+                      <th className="border border-gray-300 px-4 py-3 text-left font-semibold">Section (mm)</th>
+                      <th className="border border-gray-300 px-4 py-3 text-left font-semibold">Standard Length (mm)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td className="border border-gray-300 px-4 py-3">1</td><td className="border border-gray-300 px-4 py-3">Slotted Zed Section</td><td className="border border-gray-300 px-4 py-3">35x30x35x1.6</td><td className="border border-gray-300 px-4 py-3">2500</td></tr>
+                    <tr><td className="border border-gray-300 px-4 py-3">2</td><td className="border border-gray-300 px-4 py-3">Slotted Zed Section</td><td className="border border-gray-300 px-4 py-3">35x30x35x2.0</td><td className="border border-gray-300 px-4 py-3">2500</td></tr>
+                    <tr><td className="border border-gray-300 px-4 py-3">3</td><td className="border border-gray-300 px-4 py-3">Slotted Zed Section</td><td className="border border-gray-300 px-4 py-3">50x40x50x2.5</td><td className="border border-gray-300 px-4 py-3">2500</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            {/* Slotted C Section */}
+            <div className="mb-4">
+              <h3 className="text-xl font-bold text-blue-900 mb-2">• Slotted C Section</h3>
+              <p className="text-gray-700 mb-4">It is a C-shaped slotted section of the cable tray support system and just like the z section, it is also used wherever necessary in the system.</p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div className="relative h-48 rounded-lg overflow-hidden border bg-white flex items-center justify-center">
+                  <Image src="/new_Images/slotted c section.png" alt="Slotted C Section 1" fill className="object-contain" />
+                </div>
+                <div className="relative h-48 rounded-lg overflow-hidden border bg-white flex items-center justify-center">
+                  <Image src="/new_Images/slotted c section2.png" alt="Slotted C Section 2" fill className="object-contain" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
       <section className="py-12 px-4 md:px-6 lg:px-8 bg-gray-50">
         
         <div className="container mx-auto max-w-6xl">

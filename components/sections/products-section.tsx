@@ -38,7 +38,7 @@ const productCategories = [
   },
   {
     id: "cable-tray-support-systems",
-    name: "Cable Tray Support Systems",
+    name: "Cable Tray Support System",
     description: "Robust supports for secure installation of cable management systems",
     image: "/images/COUPLING TRAYS.JPG",
   },
