@@ -341,8 +341,8 @@ const productCategories = {
       { name: "Compliance", value: "BS 6946, DIN 1025, ASTM A653" }
     ],
     images: [
-      "/new_Images/S1.JPG",
-      "/new_Images/Strut Channel.PNG",
+      "/new_Images/S1.jpg",
+      "/new_Images/Strut Channel.png",
       "/new_Images/fiber_glass.jpg",
       "/new_Images/pro-strut-support-system-1.png",
       "/new_Images/pro-strut-support-system-2.png",
@@ -450,7 +450,7 @@ const productCategories = {
     ],
     images: [
       "/new_Images/cable.png",
-      "/new_Images/cable2.JPG"
+      "/new_Images/cable2.jpg"
     ]
   },
   "solar-support-structure": {
