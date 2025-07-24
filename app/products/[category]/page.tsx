@@ -384,13 +384,14 @@ const productCategories = {
   },
   "earthing-strips": {
     name: "Earthing Strips",
-    description: "Reliable earthing strips for safe electrical grounding in industrial and commercial installations.",
-    longDescription: "Earthing strips are essential components for electrical safety, providing a low-resistance path to ground. Made from high-conductivity materials, they are used in substations, power plants, and building installations to ensure effective grounding and protection against electrical faults.",
+    description: "We offer a huge range of GI Earthing Strips that offer a plethora of benefits such as high tensile strength, comes in durable finishes, and are also corrosion-free. The biggest USP of our earthing strips is that they possess the feature of being electrical and thermal conductivity. We provide earthing strips in multiple sizes and can also customize them as per your requirement. ",
+    longDescription: "The primary usage of the earthing strips is to ensure that there is enough safety in areas where there is high use of electronics. The earthing strips are made up of industrial-grade materials and the most advanced technologies. Earthing strips can exhibit low resistance to electrical current and also have the capability of withstanding the corrosion and at the same time dissipate abnormal fault current regularly. ",
     features: [
-      "High electrical conductivity",
+      "High electricity conducive",
+      "Easy to maintain and economical",
+      "Durable in nature",
+      "Customization possible in terms of form, size, and dimension",
       "Corrosion-resistant materials",
-      "Available in various sizes and thicknesses",
-      "Easy to install and maintain",
       "Compliant with international standards"
     ],
     benefits: [
@@ -413,8 +414,8 @@ const productCategories = {
       { name: "Compliance", value: "IS 3043, IEC 62561" }
     ],
     images: [
-      "/new_Images/earthing-strip-1.jpg",
-      "/new_Images/earthing-strip-2.jpg"
+      "/new_Images/strip.jpeg",
+      "/new_Images/earthing strip2.png"
     ]
   },
   "cable-binders": {
@@ -455,7 +456,7 @@ const productCategories = {
   },
   "solar-support-structure": {
     name: "Solar Support Structures",
-    description: "Engineered support structures for solar panel installations, ensuring durability and optimal performance.",
+    description: "The solar support structure, as its name suggests is the structure built to hold up your solar plates. These structures will be made up as per your requirement and area and are durable enough to stand still for a lifetime. ",
     longDescription: "Solar support structures are designed to securely mount solar panels in rooftop, ground, or custom installations. Made from corrosion-resistant materials, they withstand harsh weather and provide long-term stability for solar arrays.",
     features: [
       "Weather-resistant construction",
@@ -483,9 +484,9 @@ const productCategories = {
       { name: "Compliance", value: "IEC 61215, UL 2703" }
     ],
     images: [
-      "/new_Images/solar-support-1.jpg",
-      "/new_Images/solar-support-2.jpg",
-      "/new_Images/solar-support-3.jpg"
+      "/new_Images/Solar Support Structure1.png",
+      "/new_Images/Solar Support Structure2.png",
+      "/new_Images/Solar Support Structure3.png"
     ]
   }
 }
@@ -508,9 +509,9 @@ export default function ProductCategoryPage({ params }: { params: { category: st
   if (category.name === "Cable Tray Support System") mainImage = "/images/90 vertical ELBOW INSIDE.JPG";
   if (category.name === "Strut Channel Support Systems") mainImage = "/new_Images/S1.jpg"; // Updated to new image path
   if (category.name === "Cable Binders") mainImage = "/images/joogled floor wire duct with cvr.JPG";
-  if (category.name === "Earthing Strips") mainImage = "/images/iso-cert.JPG";
+  if (category.name === "Earthing Strips") mainImage = "/new_Images/earthing strip2.png";
   if (category.name === "Bottle Brackets") mainImage = "/images/dome cover.JPG";
-  if (category.name === "Solar Support Structures") mainImage = "/images/vertical elbow OUTSIDE.JPG";
+  if (category.name === "Solar Support Structures") mainImage = "/new_Images/ground-solar.png";
 
   const [modalOpen, setModalOpen] = React.useState(false);
   const [modalImage, setModalImage] = React.useState<string | null>(null);
@@ -627,8 +628,14 @@ export default function ProductCategoryPage({ params }: { params: { category: st
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Button className="flex-1">Request Quote</Button>
-
+                  <Button
+                    className="flex-1"
+                    onClick={() => {
+                      window.open('https://wa.me/919515047239?text=I%20would%20like%20to%20request%20a%20quote%20for%20' + encodeURIComponent(category.name), '_blank');
+                    }}
+                  >
+                    Request Quote
+                  </Button>
                 </div>
               </div>
             </div>
@@ -806,6 +813,38 @@ export default function ProductCategoryPage({ params }: { params: { category: st
           </div>
         </section>
       )}
+
+      {usableParams.category === "solar-support-structure" && (
+        <section className="mt-10 w-full bg-gradient-to-br from-blue-50 via-white to-blue-100 px-0 md:px-0 py-12 rounded-xl shadow-lg">
+          <div className="max-w-6xl mx-auto w-full">
+            <h2 className="text-3xl font-extrabold text-blue-900 mb-10 w-full text-left tracking-tight drop-shadow">Solar Structure Plans</h2>
+            <div className="flex flex-col md:flex-row gap-8 justify-center items-center">
+              <div className="w-full md:w-1/2 flex justify-center">
+                <div className="bg-white rounded-lg shadow p-4 flex flex-col items-center">
+                  <Image
+                    src="/new_Images/Solar_Panel_Mounting_profile.jpg"
+                    alt="Solar Panel Mounting Profile"
+                    width={500}
+                    height={350}
+                    className="rounded-lg object-contain border mb-2"
+                  />
+                </div>
+              </div>
+              <div className="w-full md:w-1/2 flex justify-center">
+                <div className="bg-white rounded-lg shadow p-4 flex flex-col items-center">
+                  <Image
+                    src="/new_Images/Solar_Panel_Mounting_Accesories.jpg"
+                    alt="Solar Panel Mounting Accessories"
+                    width={500}
+                    height={350}
+                    className="rounded-lg object-contain border mb-2"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
       {/* Cable Tray Support System Details - Only for cable tray support systems */}
       {usableParams.category === "support-systems" && (
         <section className="mt-10 w-full bg-gradient-to-br from-blue-50 via-white to-blue-100 px-0 md:px-0 py-12 rounded-xl shadow-lg">
@@ -906,7 +945,7 @@ export default function ProductCategoryPage({ params }: { params: { category: st
         <div className="container mx-auto max-w-6xl">
           <Tabs defaultValue="specifications">
             <TabsList className="grid w-full grid-cols-3">
-              <TabsTrigger value="specifications" className="text-black bg-blue-300 border border-blue-900">Specifications</TabsTrigger>
+              <TabsTrigger value="specifications" className="text-black bg-blue-300 border border-blue-900">Specification</TabsTrigger>
               <TabsTrigger value="benefits" className="text-black bg-blue-300 border border-blue-900">Benefits</TabsTrigger>
               <TabsTrigger value="applications" className="text-black bg-blue-300 border border-blue-900">Applications</TabsTrigger>
             </TabsList>
