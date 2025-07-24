@@ -70,14 +70,14 @@ export default function Header() {
             <div className="flex items-center">
               <Link href="/" className="flex items-center mr-10 md:mr-16 h-20">
                 <Image
-                  src="/services/logo.png"
+                  src="/services/logo-dark.png"
                   alt="NSKS Logo"
-                  width={48}
-                  height={48}
-                  className="object-contain mr-1 rounded-none w-12 h-12 md:w-[120px] md:h-20"
+                  width={108}
+                  height={108}
+                  className="object-contain mr-1 rounded-none w-40 h-40 md:w-[300px] md:h-20"
                   priority
                 />
-                <span className="text-lg md:text-2xl font-bold text-gray-800 tracking-wide">Cable Trays Pvt.Ltd</span>
+                {/* <span className="text-lg md:text-2xl font-bold text-gray-800 tracking-wide">Cable Trays Pvt.Ltd</span> */}
               </Link>
               <nav className="hidden md:flex items-center space-x-6">
                 <a href="/" className="text-base font-semibold text-gray-700 hover:text-blue-600 transition-colors">
