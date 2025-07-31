@@ -1544,6 +1544,7 @@ export default function ProductCategoryPage({ params }: { params: { category: st
                     </tr>
                   </thead>
                   <tbody>
+                    {/* 50 MM Depth */}
                     <tr className="hover:bg-gray-50">
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900 font-semibold" rowSpan={4}>1</td>
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">1.6 mm</td>
@@ -1570,9 +1571,118 @@ export default function ProductCategoryPage({ params }: { params: { category: st
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NA</td>
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NA</td>
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NA</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NA</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50">
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">2.5 mm</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900 font-semibold"></td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50">
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">3 mm</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900 font-semibold"></td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900" colSpan={12}>NR</td>
+                    </tr>
+                    {/* 70 MM Depth */}
+                    <tr className="hover:bg-gray-50">
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900 font-semibold" rowSpan={4}>2</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">1.6 mm</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900 font-semibold">70 MM</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NA</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NA</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NA</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NA</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NA</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50">
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">2 mm</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900 font-semibold"></td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NA</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NA</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NA</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NA</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50">
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">2.5 mm</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900 font-semibold"></td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50">
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">3 mm</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900 font-semibold"></td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900" colSpan={12}>NR</td>
+                    </tr>
+                    {/* 100 MM Depth */}
+                    <tr className="hover:bg-gray-50">
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900 font-semibold" rowSpan={4}>3</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">1.6 mm</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900 font-semibold">100 mm</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NA</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NA</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NA</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NA</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NA</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NA</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NA</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NA</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NA</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NA</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NA</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50">
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">2 mm</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900 font-semibold"></td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NA</td>
                     </tr>
                     <tr className="hover:bg-gray-50">
@@ -1586,16 +1696,15 @@ export default function ProductCategoryPage({ params }: { params: { category: st
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">R</td>
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
                     </tr>
                     <tr className="hover:bg-gray-50">
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">3 mm</td>
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900 font-semibold"></td>
-                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900" colSpan={12}>Based on Customer Requirement</td>
+                      <td className="border border-gray-300 px-2 py-3 text-center text-blue-900" colSpan={12}>NR</td>
                     </tr>
                   </tbody>
                 </table>
