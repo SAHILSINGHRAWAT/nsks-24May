@@ -20,7 +20,7 @@ const productCategories = [
   { name: "Raceways", href: "/products/raceways" },
   { name: "Junction Boxes", href: "/products/junction-boxes" },
   { name: "Cable Tray Accessories", href: "/products/cable-tray-accessories" },
-  { name: "Cable Tray Support System", href: "/products/support-systems" },
+  { name: "Support Systems", href: "/products/support-systems" },
   { name: "Strut Channel Support System", href: "/products/strut-channel-support-system" },
   { name: "Cable Binders", href: "/products/cable-binders" },
   { name: "Earthing Strips", href: "/products/earthing-strips" },
@@ -70,14 +70,14 @@ export default function Header() {
             <div className="flex items-center">
               <Link href="/" className="flex items-center mr-10 md:mr-16 h-20">
                 <Image
-                  src="/services/logo-dark.png"
+                  src="/services/logo.png"
                   alt="NSKS Logo"
-                  width={108}
-                  height={108}
-                  className="object-contain mr-1 rounded-none w-40 h-40 md:w-[300px] md:h-20"
+                  width={48}
+                  height={48}
+                  className="object-contain mr-1 rounded-none w-12 h-12 md:w-[120px] md:h-20"
                   priority
                 />
-                {/* <span className="text-lg md:text-2xl font-bold text-gray-800 tracking-wide">Cable Trays Pvt.Ltd</span> */}
+                <span className="text-lg md:text-2xl font-bold text-gray-800 tracking-wide">Cable Trays Pvt.Ltd</span>
               </Link>
               <nav className="hidden md:flex items-center space-x-6">
                 <a href="/" className="text-base font-semibold text-gray-700 hover:text-blue-600 transition-colors">
@@ -129,7 +129,7 @@ export default function Header() {
                     <span className="sr-only">Toggle menu</span>
                   </Button>
                 </SheetTrigger>
-                <SheetContent side="left" className="w-[280px] sm:w-[350px] bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 border-none">
+                <SheetContent side="left" className="w-[280px] sm:w-[350px] bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 border-none overflow-y-auto max-h-screen md:overflow-visible md:max-h-none">
                   <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
                   <div className="flex flex-col h-full">
                     <div className="flex items-center justify-between border-b border-blue-700/30 pb-2 mb-1">
