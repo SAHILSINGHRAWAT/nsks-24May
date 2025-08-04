@@ -43,8 +43,8 @@ const productCategories = [
     image: "/images/90 vertical ELBOW INSIDE.JPG",
   },
   {
-    id: "strut-channel-support-systems",
-    name: "Strut Channel Support Systems",
+    id: "strut-channel-support-system",
+    name: "Strut Channel Support System",
     description: "Versatile mounting solutions for electrical and mechanical applications",
     image: "/placeholder.svg?height=300&width=400",
   },
@@ -61,14 +61,14 @@ const productCategories = [
     image: "/placeholder.svg?height=300&width=400",
   },
   {
-    id: "bottle-brackets",
-    name: "Bottle Brackets",
+    id: "bottle-bracket",
+    name: "Bottle Bracket",
     description: "Specialized mounting solutions for specific applications",
     image: "/placeholder.svg?height=300&width=400",
   },
   {
-    id: "solar-support-structures",
-    name: "Solar Support Structures",
+    id: "solar-support-structure",
+    name: "Solar Support Structure",
     description: "Durable frameworks for mounting solar panels and related equipment",
     image: "/placeholder.svg?height=300&width=400",
   },
@@ -104,17 +104,17 @@ export default function ProductsPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {productCategories.map((category) => {
               let imagePath = category.image;
-              if (category.name === "Perforated Cable Trays") imagePath = "/images/PERFORATED CABLE TRAY-01.JPG";
-              if (category.name === "Ladder Cable Trays") imagePath = "/images/F75-LADDER.JPG";
+              if (category.name === "Perforated Cable Trays") imagePath = "/new_Images/90 DEGREE HORIZONTAL BEND ..JPG";
+              if (category.name === "Ladder Cable Trays") imagePath = "/new_Images/90 DEGREE EXTERNAL BEND BOLTED RUNG LADDER.JPG";
               if (category.name === "Raceways") imagePath = "/images/PLAIN RACEWAY WITH CVE-SLEEV.JPG";
               if (category.name === "Junction Boxes") imagePath = "/images/CEILING JUNCTION BOX.JPG";
-              if (category.name === "Cable Tray Accessories") imagePath = "/images/cable duct accessories-01--clr.JPG";
-              if (category.name === "Cable Tray Support System") imagePath = "/images/90 vertical ELBOW INSIDE.JPG";
-              if (category.name === "Strut Channel Support Systems") imagePath = "/images/steel-factories.jpg";
-              if (category.name === "Cable Binders") imagePath = "/images/joogled floor wire duct with cvr.JPG";
-              if (category.name === "Earthing Strips") imagePath = "/images/iso-cert.JPG";
-              if (category.name === "Bottle Brackets") imagePath = "/images/dome cover.JPG";
-              if (category.name === "Solar Support Structures") imagePath = "/images/vertical elbow OUTSIDE.JPG";
+              if (category.name === "Cable Tray Accessories") imagePath = "/new_Images/CROSS BEND ..JPG";
+              if (category.name === "Cable Tray Support System") imagePath = "/new_Images/slotted Z section.png";
+              if (category.name === "Strut Channel Support System") imagePath = "/new_Images/S1.jpg";
+              if (category.name === "Cable Binders") imagePath = "/new_Images/cable.png";
+              if (category.name === "Earthing Strips") imagePath = "/new_Images/strip.jpeg";
+              if (category.name === "Bottle Bracket") imagePath = "/new_Images/bottle_bracket.png";
+              if (category.name === "Solar Support Structure") imagePath = "/new_Images/Solar Support Structure1.png";
               return (
                 <Card key={category.id} className="overflow-hidden group">
                   <div className="relative h-48">

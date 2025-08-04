@@ -507,7 +507,7 @@ export default function ProductCategoryPage({ params }: { params: { category: st
   if (category.name === "Junction Boxes") mainImage = "/images/CEILING JUNCTION BOX.JPG";
   if (category.name === "Cable Tray Accessories") mainImage = "/images/cable duct accessories-01--clr.JPG";
   if (category.name === "Cable Tray Support System") mainImage = "/images/90 vertical ELBOW INSIDE.JPG";
-  if (category.name === "Strut Channel Support Systems") mainImage = "/new_Images/S1.jpg"; // Updated to new image path
+  if (category.name === "Strut Channel Support System") mainImage = "/new_Images/S1.jpg"; // Updated to new image path
   if (category.name === "Cable Binders") mainImage = "/images/joogled floor wire duct with cvr.JPG";
   if (category.name === "Earthing Strips") mainImage = "/new_Images/earthing strip2.png";
   if (category.name === "Bottle Brackets") mainImage = "/images/dome cover.JPG";
