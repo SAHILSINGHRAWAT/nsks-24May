@@ -14,7 +14,7 @@ const productCategories = {
   "perforated-cable-trays": {
     name: "Perforated Cable Trays",
     description:
-      "Ours perforated cable trays provide excellent ventilation and heat dissipation for your cables, ensuring optimal performance and longevity.",
+      "Our perforated cable trays provide excellent ventilation and heat dissipation for your cables, ensuring optimal performance and longevity.",
     longDescription:
       "A Perforated cable tray is a prominent category of cable tray that comes with holes in the bottom sheet and side rails, used for laying power and signal cables. Perforated cable trays have a strong structure that allows them to carry multiple cables of different types. These come with smooth edges that protect the wires from getting scratched. The cable trays are strong enough to withstand short circuits.The perforated cable trays are used to distribute electricity in departmental stores, airports, hospitals, and gyms. Perforated cable trays are flexible and easy to install. Overall, the maintenance is also low.",
     features: [

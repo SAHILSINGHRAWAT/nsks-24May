@@ -58,7 +58,7 @@ export default function ContactSection() {
 
   // Fix type errors by casting refs
   return (
-    <section ref={sectionRef as React.RefObject<HTMLDivElement>} id="contact" className="py-16 px-4 md:px-6 lg:px-8 bg-gray-50">
+    <section ref={sectionRef as React.RefObject<HTMLDivElement>} id="contact" className="py-16 px-2 sm:px-4 md:px-6 lg:px-8 bg-gray-50">
       <div className="container mx-auto max-w-6xl">
         <div ref={headerRef as React.RefObject<HTMLDivElement>} className="text-center mb-12">
           <h2 className={`text-3xl font-bold tracking-tight mb-4 text-black scroll-animate-down ${isHeaderVisible ? 'visible' : ''}`}>Contact Us</h2>
@@ -71,59 +71,57 @@ export default function ContactSection() {
           {/* Contact Form */}
 
           {/* Contact Information */}
-          <div ref={infoRef as React.RefObject<HTMLDivElement>} className={`space-y-8 scroll-animate-right ${isInfoVisible ? 'visible' : ''}`}>
-            <div className={`bg-white p-6 rounded-lg shadow-sm scroll-animate-scale ${isInfoVisible ? 'visible' : ''}`} style={{ transitionDelay: '0.2s' }}>
+          <div ref={infoRef as React.RefObject<HTMLDivElement>} className={`space-y-8 scroll-animate-right ${isInfoVisible ? 'visible' : ''}`}> 
+            <div className={`bg-white p-4 sm:p-6 rounded-lg shadow-sm scroll-animate-scale ${isInfoVisible ? 'visible' : ''}`} style={{ transitionDelay: '0.2s' }}>
               <h3 className={`text-2xl font-bold mb-6 text-black scroll-animate-right ${isInfoVisible ? 'visible' : ''}`} style={{ transitionDelay: '0.3s' }}>Contact Information</h3>
               <div className="space-y-6">
-                <div className="flex items-start">
+                <div className="flex items-start break-words max-w-full">
                   <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                     <Phone className="h-5 w-5 text-primary" />
                   </div>
-                  <div>
+                  <div className="min-w-0">
                     <h4 className="font-semibold mb-1 text-black">Phone</h4>
-                    <p className="text-gray-600">+91 9515047239</p>
-                    <p className="text-gray-600">+91 9515077063</p>
+                    <p className="text-gray-600 break-words">+91 9515047239</p>
+                    <p className="text-gray-600 break-words">+91 9515077063</p>
                   </div>
                 </div>
-                <div className="flex items-start">
+                <div className="flex items-start break-words max-w-full">
                   <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                     <Mail className="h-5 w-5 text-primary" />
                   </div>
-                  <div>
+                  <div className="min-w-0">
                     <h4 className="font-semibold mb-1 text-black">Email</h4>
-                    <p className="text-gray-600">info@nskscabletrays.com</p>
-                    <p className="text-gray-600">enquiry@nskscabletrays.com </p>
+                    <p className="text-gray-600 break-all text-sm sm:text-base">info@nskscabletrays.com</p>
+                    <p className="text-gray-600 break-all text-sm sm:text-base">enquiry@nskscabletrays.com</p>
                   </div>
                 </div>
-                <div className="flex items-start">
+                <div className="flex items-start break-words max-w-full">
                   <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                     <MapPin className="h-5 w-5 text-primary" />
                   </div>
-                  <div>
+                  <div className="min-w-0">
                     <h4 className="font-semibold mb-1 text-black">Address</h4>
-                    <p className="text-gray-600">
-                      Plot No:1, Road No:3 ,
-                      <br />
-                     Satellite Industrial State (SIE)
-                      <br />
-                      Shivalayam Road, Balanagar, Hyderabad- 500037 , India.  
+                    <p className="text-gray-600 break-words">
+                      Plot No:1, Road No:3 ,<br />
+                      Satellite Industrial State (SIE)<br />
+                      Shivalayam Road, Balanagar, Hyderabad- 500037 , India.
                     </p>
                   </div>
                 </div>
-                <div className="flex items-start">
+                <div className="flex items-start break-words max-w-full">
                   <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                     <Clock className="h-5 w-5 text-primary" />
                   </div>
-                  <div>
+                  <div className="min-w-0">
                     <h4 className="font-semibold mb-1 text-black">Business Hours</h4>
-                    <p className="text-gray-600">Tuesday - Sunday: 9:00 AM - 6:00 PM</p>
+                    <p className="text-gray-600 break-words">Tuesday - Sunday: 9:00 AM - 6:00 PM</p>
                     {/* <p className="text-gray-600">Saturday: 10:00 AM - 4:00 PM</p>
                     <p className="text-gray-600">Sunday: Closed</p> */}
                   </div>
                 </div>
               </div>
             </div>
-            <div className={`bg-white p-6 rounded-lg shadow-sm border scroll-animate-scale ${isInfoVisible ? 'visible' : ''}`} style={{ transitionDelay: '0.5s' }}>
+            <div className={`bg-white p-4 sm:p-6 rounded-lg shadow-sm border scroll-animate-scale ${isInfoVisible ? 'visible' : ''}`} style={{ transitionDelay: '0.5s' }}>
               <div className={`w-full aspect-[16/9] rounded-lg overflow-hidden scroll-animate-scale ${isInfoVisible ? 'visible' : ''}`} style={{ transitionDelay: '0.7s' }}>
                 <iframe
                   src="https://www.google.com/maps?hl=en&q=NSKS+CABLE+TRAYS+PVT+LTD,+Shop+No:+1,+Road+No:+3,+SIE,+Shivalayam+Rd,+Cooperative+Industrial+Estate,+Balanagar,+Hyderabad,+Telangana+500037&ie=UTF8&t=&z=14&iwloc=B&output=embed"
@@ -136,7 +134,7 @@ export default function ContactSection() {
               </div>
             </div>
           </div>
-          <div ref={formRef as React.RefObject<HTMLDivElement>} className={`bg-white p-6 md:p-8 rounded-lg shadow-sm scroll-animate-left ${isFormVisible ? 'visible' : ''}`}>
+          <div ref={formRef as React.RefObject<HTMLDivElement>} className={`bg-white p-4 sm:p-6 md:p-8 rounded-lg shadow-sm scroll-animate-left ${isFormVisible ? 'visible' : ''}`}> 
             <h3 className={`text-2xl font-bold mb-6 text-black scroll-animate-left ${isFormVisible ? 'visible' : ''}`} style={{ transitionDelay: '0.2s' }}>Send Us a Message</h3>
             <form className="space-y-6" onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
