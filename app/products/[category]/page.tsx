@@ -1294,7 +1294,7 @@ export default function ProductCategoryPage({ params }: { params: { category: st
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900 font-semibold"></td>
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900" colSpan={12}>Based on Customer Requirement</td>
                     </tr>
-                    <tr className="hover:bg-gray-50">
+                    {/* <tr className="hover:bg-gray-50">
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900 font-semibold" rowSpan={4}>4</td>
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">1.6 mm</td>
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900 font-semibold">75 mm</td>
@@ -1348,7 +1348,7 @@ export default function ProductCategoryPage({ params }: { params: { category: st
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">3 mm</td>
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900 font-semibold"></td>
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900" colSpan={12}>Based on Customer Requirement</td>
-                    </tr>
+                    </tr> */}
                     <tr className="hover:bg-gray-50">
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900 font-semibold" rowSpan={4}>5</td>
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">1.6 mm</td>
@@ -1404,7 +1404,7 @@ export default function ProductCategoryPage({ params }: { params: { category: st
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900 font-semibold"></td>
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900" colSpan={12}>Based on Customer Requirement</td>
                     </tr>
-                    <tr className="hover:bg-gray-50">
+                    {/* {/* <tr className="hover:bg-gray-50">
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900 font-semibold" rowSpan={4}>5</td>
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">1.6 mm</td>
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900 font-semibold">100 mm</td>
@@ -1475,8 +1475,8 @@ export default function ProductCategoryPage({ params }: { params: { category: st
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
-                    </tr>
-                    <tr className="hover:bg-gray-50">
+                    </tr> */}
+                    {/* <tr className="hover:bg-gray-50">
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">2 mm</td>
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900 font-semibold"></td>
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
@@ -1491,8 +1491,8 @@ export default function ProductCategoryPage({ params }: { params: { category: st
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
-                    </tr>
-                    <tr className="hover:bg-gray-50">
+                    </tr> */} 
+                    {/* <tr className="hover:bg-gray-50">
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">2.5 mm</td>
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900 font-semibold"></td>
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
@@ -1508,12 +1508,12 @@ export default function ProductCategoryPage({ params }: { params: { category: st
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">NR</td>
-                    </tr>
-                    <tr className="hover:bg-gray-50">
+                    </tr> */}
+                    {/* <tr className="hover:bg-gray-50">
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900">3 mm</td>
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900 font-semibold"></td>
                       <td className="border border-gray-300 px-2 py-3 text-center text-blue-900" colSpan={12}>Based on Customer Requirement</td>
-                    </tr>
+                    </tr> */}
                   </tbody>
                 </table>
               </div>
