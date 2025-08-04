@@ -68,16 +68,16 @@ export default function Header() {
         <div className="container mx-auto max-w-6xl px-4 md:px-6 lg:px-8">
           <div className="flex h-16 md:h-20 items-center justify-between">
             <div className="flex items-center">
-              <Link href="/" className="flex items-center mr-10 md:mr-16 h-20">
+              <Link href="/" className="flex items-center mr-10 md:mr-16 h-20 w-full max-w-[220px] md:max-w-[300px]">
                 <Image
-                  src="/services/logo.png"
+                  src="/services/logo-dark.png"
                   alt="NSKS Logo"
-                  width={48}
-                  height={48}
-                  className="object-contain mr-1 rounded-none w-12 h-12 md:w-[120px] md:h-20"
+                  width={220}
+                  height={80}
+                  className="object-contain mr-1 rounded-none w-full h-16 md:h-20"
                   priority
                 />
-                <span className="text-lg md:text-2xl font-bold text-gray-800 tracking-wide">Cable Trays Pvt.Ltd</span>
+                {/* <span className="text-lg md:text-2xl font-bold text-gray-800 tracking-wide">Cable Trays Pvt.Ltd</span> */}
               </Link>
               <nav className="hidden md:flex items-center space-x-6">
                 <a href="/" className="text-base font-semibold text-gray-700 hover:text-blue-600 transition-colors">
