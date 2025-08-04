@@ -32,16 +32,13 @@ export default function AboutSection() {
               <span className="inline-block w-2 h-8 bg-blue-400 rounded-full mr-2 animate-pulse"></span>
               Our Story
             </h3>
-            <p className="text-black mb-4 text-base md:text-lg">
-              Founded in 2000, NSKS Cable Trays began as a small workshop with a vision to revolutionize cable
-              management systems in India. Over the years, we have grown into a leading manufacturer with
-              state-of-the-art production facilities spanning over 50,000 square feet.
+            <p className="text-black mb-4 text-base md:text-base">
+              The company was established in 2018 with the name - NSK Cable Trays. The company was Initiated as a manufacturing proprietor firm and was performing well in the market. However, the founders had bigger dreams and aimed to expand their business. Hence, in September 2020 the company went on to convert itself to NSKS Cable Trays Pvt Ltd.
             </p>
-            <p className="text-black mb-6 text-base md:text-lg">
-              Our journey has been marked by continuous innovation, unwavering commitment to quality, and a deep
-              understanding of industry needs. Today, we serve clients across multiple sectors including construction,
-              telecommunications, power generation, and manufacturing.
+            <p className="text-black mb-4 text-base md:text-base">
+              The professionals at NSKS Cable Trays have put in many efforts and time in conducting a plethora of research activities. Over the years, these researches have become a base for us to design and develop a huge and diverse product line suits the customers' needs and wants.
             </p>
+            <p className="text-black mb-4 text-base md:text-base">In our two-year journey, we have always thrived hard to offer the best to our clients. We believe in hustling each day by providing innovative and the right business solutions throughout. For NSKS Cable Trays, client satisfaction is the utmost priority. You can rely on our quality, and we assure you that we will never disappoint you. </p>
             <h3 className="text-2xl md:text-3xl font-bold mb-4 text-black mt-10 flex items-center gap-2">
               <span className="inline-block w-2 h-8 bg-blue-400 rounded-full mr-2 animate-pulse"></span>
               Our Values

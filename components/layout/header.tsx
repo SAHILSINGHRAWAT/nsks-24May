@@ -47,9 +47,9 @@ export default function Header() {
             </div>
           </div>
           <div className="w-full sm:w-auto flex justify-center sm:justify-end items-center gap-6 text-white">
-            <a href="#" className="hover:underline">Careers</a>
+            {/* <a href="#" className="hover:underline">Careers</a>
             <a href="#" className="hover:underline">News</a>
-            <a href="#" className="hover:underline">Support</a>
+            <a href="#" className="hover:underline">Support</a> */}
             <div className="hidden sm:flex items-center gap-4 ml-6">
               {/* <a href="#" className="text-gray-300 hover:text-white transition-colors" aria-label="Facebook"><Facebook className="h-5 w-5" /></a>
               <a href="#" className="text-gray-300 hover:text-white transition-colors" aria-label="Twitter"><Twitter className="h-5 w-5" /></a>

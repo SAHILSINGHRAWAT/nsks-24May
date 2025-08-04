@@ -58,11 +58,16 @@ const productCategories = {
       "/new_Images/90 DEGREE HORIZONTAL BEND._1.JPG",
       "/new_Images/90 DEGREE INTERNAL BEND BOLTED RUNG LADDER.JPG",
       "/new_Images/90 DEGREE VERTICAL EXTERNAL BEND ..JPG",
-      "/new_Images/90 DEGREE VERTICAL EXTERNAL BEND ._1.JPG",
+      // "/new_Images/90 DEGREE VERTICAL EXTERNAL BEND ._1.JPG",
       "/new_Images/EQUAL TEE..JPG",
       "/new_Images/CENTERAL REDUCER ..JPG",
       "/new_Images/CENTERAL REDUCER ._1.JPG",
       "/new_Images/CROSS..JPG",
+      "/real-world-images/Perforated.jpg",
+      "/Images/PERFORATED CABLE TRAY-08.jpg",
+      "/Images/PERFORATED CABLE TRAY-09.jpg",
+      "/Images/PERFORATED CABLE TRAY-06.jpg",
+      "/Images/PERFORATED CABLE TRAY-02.jpg",
     ],
   },
   "ladder-cable-trays": {
@@ -501,7 +506,7 @@ export default function ProductCategoryPage({ params }: { params: { category: st
 
   // Select main image based on category name
   let mainImage = category.images[0] || "/placeholder.svg";
-  if (category.name === "Perforated Cable Trays") mainImage = "/real-world-images/Perforated.jpg";
+  if (category.name === "Perforated Cable Trays") mainImage = "/Images/F25-V.jpg";
   if (category.name === "Ladder Cable Trays") mainImage = "/images/F75-LADDER.JPG";
   if (category.name === "Raceways") mainImage = "/images/PLAIN RACEWAY WITH CVE-SLEEV.JPG";
   if (category.name === "Junction Boxes") mainImage = "/images/CEILING JUNCTION BOX.JPG";
@@ -511,7 +516,7 @@ export default function ProductCategoryPage({ params }: { params: { category: st
   if (category.name === "Cable Binders") mainImage = "/images/joogled floor wire duct with cvr.JPG";
   if (category.name === "Earthing Strips") mainImage = "/new_Images/earthing strip2.png";
   if (category.name === "Bottle Brackets") mainImage = "/images/dome cover.JPG";
-  if (category.name === "Solar Support Structures") mainImage = "/new_Images/ground-solar.png";
+  if (category.name === "Solar Support Structures") mainImage = "/new_Images/Solar_Panel_Mounting_Accesories.jpg";
 
   const [modalOpen, setModalOpen] = React.useState(false);
   const [modalImage, setModalImage] = React.useState<string | null>(null);
@@ -583,8 +588,12 @@ export default function ProductCategoryPage({ params }: { params: { category: st
                   className="object-cover"
                 />
               </div>
-              {/* Accessories Heading */}
-              <h2 className="text-blue-900 text-2xl font-bold mb-4 ">Accessories</h2>
+              {/* Accessories Heading: Only for Perforated Cable Trays and Ladder Cable Trays */}
+              {(category.name === "Perforated Cable Trays" || category.name === "Ladder Cable Trays") ? (
+                <h2 className="text-blue-900 text-2xl font-bold mb-4 ">Accessories</h2>
+              ) : (
+                <h2 className="text-blue-900 text-2xl font-bold mb-4 ">Product Images</h2>
+              )}
               <div className="grid grid-cols-4 gap-4">
                 {category.images.map((image, index) => (
                   <div
