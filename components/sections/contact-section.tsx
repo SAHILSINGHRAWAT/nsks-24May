@@ -69,53 +69,6 @@ export default function ContactSection() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Contact Form */}
-          <div ref={formRef as React.RefObject<HTMLDivElement>} className={`bg-white p-6 md:p-8 rounded-lg shadow-sm scroll-animate-left ${isFormVisible ? 'visible' : ''}`}>
-            <h3 className={`text-2xl font-bold mb-6 text-black scroll-animate-left ${isFormVisible ? 'visible' : ''}`} style={{ transitionDelay: '0.2s' }}>Send Us a Message</h3>
-            <form className="space-y-6" onSubmit={handleSubmit}>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="space-y-2">
-                  <Label htmlFor="name" className="text-black">Full Name</Label>
-                  <Input id="name" placeholder="Your full name" value={form.name} onChange={handleChange} required />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="company" className="text-black">Company Name</Label>
-                  <Input id="company" placeholder="Your company name" value={form.company} onChange={handleChange} />
-                </div>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="space-y-2">
-                  <Label htmlFor="email" className="text-black">Email Address</Label>
-                  <Input id="email" type="email" placeholder="Your email address" value={form.email} onChange={handleChange} required />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="phone" className="text-black">Phone Number</Label>
-                  <Input id="phone" placeholder="Your phone number" value={form.phone} onChange={handleChange} />
-                </div>
-              </div>
-              <div className="space-y-2">
-                <Label htmlFor="inquiry-type" className="text-black">Inquiry Type</Label>
-                <Select value={form.inquiryType} onValueChange={handleSelectChange}>
-                  <SelectTrigger id="inquiry-type">
-                    <SelectValue placeholder="Select inquiry type" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="product">Product Inquiry</SelectItem>
-                    <SelectItem value="quote">Request a Quote</SelectItem>
-                    <SelectItem value="support">Technical Support</SelectItem>
-                    <SelectItem value="custom">Custom Solution</SelectItem>
-                    <SelectItem value="other">Other</SelectItem>
-                  </SelectContent>
-                </Select>
-              </div>
-              <div className="space-y-2">
-                <Label htmlFor="message" className="text-black">Message</Label>
-                <Textarea id="message" placeholder="Please describe your inquiry in detail" rows={5} value={form.message} onChange={handleChange} required />
-              </div>
-              <Button type="submit" className="w-full" disabled={loading}>
-                {loading ? "Sending..." : "Submit Inquiry"}
-              </Button>
-            </form>
-          </div>
 
           {/* Contact Information */}
           <div ref={infoRef as React.RefObject<HTMLDivElement>} className={`space-y-8 scroll-animate-right ${isInfoVisible ? 'visible' : ''}`}>
@@ -170,7 +123,6 @@ export default function ContactSection() {
                 </div>
               </div>
             </div>
-
             <div className={`bg-white p-6 rounded-lg shadow-sm border scroll-animate-scale ${isInfoVisible ? 'visible' : ''}`} style={{ transitionDelay: '0.5s' }}>
               <div className={`w-full aspect-[16/9] rounded-lg overflow-hidden scroll-animate-scale ${isInfoVisible ? 'visible' : ''}`} style={{ transitionDelay: '0.7s' }}>
                 <iframe
@@ -183,6 +135,53 @@ export default function ContactSection() {
                 ></iframe>
               </div>
             </div>
+          </div>
+          <div ref={formRef as React.RefObject<HTMLDivElement>} className={`bg-white p-6 md:p-8 rounded-lg shadow-sm scroll-animate-left ${isFormVisible ? 'visible' : ''}`}>
+            <h3 className={`text-2xl font-bold mb-6 text-black scroll-animate-left ${isFormVisible ? 'visible' : ''}`} style={{ transitionDelay: '0.2s' }}>Send Us a Message</h3>
+            <form className="space-y-6" onSubmit={handleSubmit}>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="space-y-2">
+                  <Label htmlFor="name" className="text-black">Full Name</Label>
+                  <Input id="name" placeholder="Your full name" value={form.name} onChange={handleChange} required />
+                </div>
+                <div className="space-y-2">
+                  <Label htmlFor="company" className="text-black">Company Name</Label>
+                  <Input id="company" placeholder="Your company name" value={form.company} onChange={handleChange} />
+                </div>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="space-y-2">
+                  <Label htmlFor="email" className="text-black">Email Address</Label>
+                  <Input id="email" type="email" placeholder="Your email address" value={form.email} onChange={handleChange} required />
+                </div>
+                <div className="space-y-2">
+                  <Label htmlFor="phone" className="text-black">Phone Number</Label>
+                  <Input id="phone" placeholder="Your phone number" value={form.phone} onChange={handleChange} />
+                </div>
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="inquiry-type" className="text-black">Inquiry Type</Label>
+                <Select value={form.inquiryType} onValueChange={handleSelectChange}>
+                  <SelectTrigger id="inquiry-type">
+                    <SelectValue placeholder="Select inquiry type" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="product">Product Inquiry</SelectItem>
+                    <SelectItem value="quote">Request a Quote</SelectItem>
+                    <SelectItem value="support">Technical Support</SelectItem>
+                    <SelectItem value="custom">Custom Solution</SelectItem>
+                    <SelectItem value="other">Other</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="message" className="text-black">Message</Label>
+                <Textarea id="message" placeholder="Please describe your inquiry in detail" rows={5} value={form.message} onChange={handleChange} required />
+              </div>
+              <Button type="submit" className="w-full" disabled={loading}>
+                {loading ? "Sending..." : "Submit Inquiry"}
+              </Button>
+            </form>
           </div>
         </div>
       </div>
