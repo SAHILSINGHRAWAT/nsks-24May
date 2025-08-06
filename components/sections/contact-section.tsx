@@ -83,6 +83,7 @@ export default function ContactSection() {
                     <h4 className="font-semibold mb-1 text-black">Phone</h4>
                     <p className="text-gray-600 break-words">+91 9515047239</p>
                     <p className="text-gray-600 break-words">+91 9515077063</p>
+                    <p className="text-gray-600 break-words">+91 9764330911</p>
                   </div>
                 </div>
                 <div className="flex items-start break-words max-w-full">

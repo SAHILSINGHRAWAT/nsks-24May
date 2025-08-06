@@ -128,6 +128,7 @@ export default function Footer() {
               <div>
                 <h4 className="text-white font-medium">Phone</h4>
                 <p>+91 9515047239</p>
+                <p>+91 9764330911</p>
               </div>
             </div>
             <div className="flex items-start">
