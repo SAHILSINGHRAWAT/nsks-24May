@@ -63,11 +63,11 @@ const productCategories = {
       "/new_Images/CENTERAL REDUCER ..JPG",
       "/new_Images/CENTERAL REDUCER ._1.JPG",
       "/new_Images/CROSS..JPG",
-      "/real-world-images/Perforated.jpg",
-      "/Images/PERFORATED CABLE TRAY-08.jpg",
-      "/Images/PERFORATED CABLE TRAY-09.jpg",
-      "/Images/PERFORATED CABLE TRAY-06.jpg",
-      "/Images/PERFORATED CABLE TRAY-02.jpg",
+      "/real-world-images/Perforated.JPG",
+      "/Images/PERFORATED CABLE TRAY-08.JPG",
+      "/Images/PERFORATED CABLE TRAY-09.JPG",
+      "/Images/PERFORATED CABLE TRAY-06.JPG",
+      "/Images/PERFORATED CABLE TRAY-02.JPG",
     ],
   },
   "ladder-cable-trays": {
@@ -506,7 +506,7 @@ export default function ProductCategoryPage({ params }: { params: { category: st
 
   // Select main image based on category name
   let mainImage = category.images[0] || "/placeholder.svg";
-  if (category.name === "Perforated Cable Trays") mainImage = "/Images/F25-V.jpg";
+  if (category.name === "Perforated Cable Trays") mainImage = "/Images/F25-V.JPG";
   if (category.name === "Ladder Cable Trays") mainImage = "/images/F75-LADDER.JPG";
   if (category.name === "Raceways") mainImage = "/images/PLAIN RACEWAY WITH CVE-SLEEV.JPG";
   if (category.name === "Junction Boxes") mainImage = "/images/CEILING JUNCTION BOX.JPG";
